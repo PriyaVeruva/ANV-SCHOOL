@@ -1,0 +1,76 @@
+.header-section {
+	display: flex;
+	justify-content: space-evenly;
+	background: linear-gradient(#d719ae, #3a0b6f);
+	padding: 16px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	align-items: center;
+}
+
+.nav-item {
+	position: relative;
+}
+.highlight-nav-item a:hover {
+	transition: transform 0.5s ease-in;
+}
+
+.highlight-nav-item > a {
+	color: #fff;
+	border-radius: 20px;
+	background-color: #3a0b6f;
+}
+a {
+	font-size: 18px;
+	text-decoration: none;
+	color: #fff;
+	font-family: Urbanist, sans-serif;
+	padding: 2vh;
+}
+
+.logo {
+	height: 40px;
+}
+
+.sub-menus {
+	position: absolute;
+	top: 93%;
+	background: linear-gradient(#d719ae, #3a0b6f);
+	/* min-width: 220px; */
+	padding: 2vh;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.options {
+	padding: 10px;
+	position: relative;
+}
+
+.options a,
+.nested-menu a {
+	color: #fff;
+	display: block;
+	padding: 1vh;
+	transition: color 0.5s ease-in;
+}
+
+.options a:hover,
+.nested-menu a:hover {
+	background-color: rgb(87, 0, 128);
+	color: #fff;
+	border-radius: 20px;
+}
+
+/* Nested dropdown */
+.nested-menu {
+	position: absolute;
+	left: 220px;
+	top: 0;
+	background: linear-gradient(#d719ae, #3a0b6f);
+	min-width: 200px;
+	padding: 2vh;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}

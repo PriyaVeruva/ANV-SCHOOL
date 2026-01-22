@@ -1,0 +1,271 @@
+.aboutus-page {
+	font-family: "Poppins", sans-serif;
+	color: #333;
+}
+
+/* HERO */
+.about-hero {
+	position: relative;
+	height: 420px;
+}
+
+.about-hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about-hero-overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(155, 70, 145, 0.45);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-hero-overlay h1 {
+	color: #fff;
+	font-size: 48px;
+	font-weight: 600;
+}
+
+/* DESCRIPTION */
+.about-description {
+	max-width: 1100px;
+	margin: 60px auto;
+	padding: 0 20px;
+}
+
+.about-description p {
+	line-height: 1.8;
+	margin-bottom: 18px;
+	font-size: 16px;
+}
+
+/* IMAGE */
+.about-image img {
+	width: 100%;
+	height: auto;
+	margin: 60px 0;
+}
+
+/* VISION & PURPOSE */
+.vision-purpose {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+	max-width: 1100px;
+	margin: 80px auto;
+	padding: 0 20px;
+}
+
+.card {
+	padding: 40px;
+	border-radius: 16px;
+	background: linear-gradient(135deg, #fff5fb, #fdeff7);
+	text-align: center;
+}
+
+.card h3 {
+	font-size: 26px;
+	color: #9b4691;
+	margin-bottom: 16px;
+}
+
+/* VALUES */
+.values {
+	display: flex;
+	justify-content: center;
+	margin: 120px 0;
+}
+
+.values-container {
+	position: relative;
+	width: 420px;
+	height: 420px;
+}
+
+/* Center */
+.center-circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	background: #fdeef6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+	z-index: 2;
+	white-space: nowrap;
+}
+
+.center-circle h2 {
+	color: #9b4691;
+	font-size: 30px;
+}
+
+/* Dotted guide ring */
+.values-container::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+	height: 300px;
+	border: 1px dashed #f3c7de;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Value items */
+.value-item {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: center;
+}
+
+.value-item span {
+	background: #ffffff;
+	padding: 10px 18px;
+	border-radius: 30px;
+	font-size: 24px;
+	font-weight: 500;
+	color: #f29c6b;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+	white-space: nowrap;
+}
+
+/* Positions */
+.v1 {
+	transform: rotate(-90deg) translate(150px) rotate(90deg);
+}
+
+.v2 {
+	transform: rotate(150deg) translate(150px) rotate(-150deg);
+	right: 50%;
+	left: 30%;
+}
+
+.v3 {
+	transform: rotate(30deg) translate(150px) rotate(-30deg);
+}
+
+/* CHAIRMAN */
+.chairman {
+	background: linear-gradient(135deg, #fff5f0, #fde7f3);
+	padding: 80px 20px;
+}
+
+.chairman-card {
+	/* max-width: 1000px; */
+	/* margin: auto; */
+	display: flex;
+	gap: 5vh;
+	align-items: flex-start;
+}
+
+.chairman-text h3 {
+	color: #f29c6b;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.chairman-text blockquote {
+	font-size: 16px;
+	line-height: 1.8;
+}
+
+.chairman-text p {
+	margin-bottom: 14px;
+}
+/*contact section*/
+.contact-section {
+	padding: 80px 8%;
+	background: #fff;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 36px;
+	color: #b54acb;
+	margin-bottom: 50px;
+	font-weight: 600;
+}
+
+.contact-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 30px;
+}
+
+.contact-card {
+	border: 1px solid #e7c6ef;
+	border-radius: 14px;
+	padding: 30px 24px;
+	transition: all 0.3s ease;
+	background: #fff;
+}
+
+.contact-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 12px 30px rgba(181, 74, 203, 0.15);
+}
+
+.card-title {
+	font-size: 18px;
+	font-weight: 600;
+	color: #222;
+}
+
+.divider {
+	width: 40px;
+	height: 2px;
+	background: #f2a65a;
+	margin: 14px 0 20px;
+}
+
+.card-name {
+	font-weight: 500;
+	color: #333;
+	margin-bottom: 4px;
+}
+
+.card-role {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 16px;
+}
+
+.card-email {
+	font-size: 14px;
+	color: #b54acb;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.card-email:hover {
+	text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+	.vision-purpose {
+		grid-template-columns: 1fr;
+	}
+
+	.values-list {
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.about-hero-overlay h1 {
+		font-size: 32px;
+		text-align: center;
+	}
+}
