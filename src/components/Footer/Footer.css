@@ -30,7 +30,8 @@
 	margin-bottom: 15px;
 }
 
-.footer-col p {
+.footer-col p,
+.hyperlink {
 	font-size: 14px;
 	line-height: 1.7;
 	color: #555;

@@ -22,13 +22,7 @@ const Initiatives = () => {
 			<div className="carousel-wrapper" ref={section9carouselRef}>
 				{initiativesData.section9.cards.map((card, index) => (
 					<div className="carousel-card" key={index}>
-						<img
-							src={
-								card.image.startsWith("http") &&
-								card.image
-							}
-							alt={card.title}
-						/>
+						<img src={card.image} alt={card.title} />
 						<h3>{card.title}</h3>
 						<p>{card.description}</p>
 					</div>

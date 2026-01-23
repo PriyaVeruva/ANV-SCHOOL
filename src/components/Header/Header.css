@@ -28,7 +28,9 @@ a {
 	font-family: Urbanist, sans-serif;
 	padding: 2vh;
 }
-
+.none {
+	display: none;
+}
 .logo {
 	height: 40px;
 }

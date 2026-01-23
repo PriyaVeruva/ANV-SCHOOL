@@ -16,7 +16,7 @@ const Footer = () => {
 			{/* Top Section */}
 			<div className="footer-top">
 				<div className="footer-block">
-					<h4>Podar Schools In</h4>
+					<h4>ANV Schools In</h4>
 					<p>Chennai</p>
 				</div>
 			</div>
@@ -28,23 +28,43 @@ const Footer = () => {
 					<h4>Contact Us</h4>
 					<p>
 						<FaMapMarkerAlt />
-						No. 3/2, Hommadevanahalli, Begur Hobli,
+						A.N.V VIDHYALAYA MATRICULATION SCHOOL,
 						<br />
-						Behind T. John College,
+						Ayyanur road
 						<br />
-						Off Bannerghatta Road,
-						<br />
-						Bengaluru – 560083, Karnataka
+						Vellakovil - 638111.
 					</p>
 
 					<p>
-						<FaEnvelope /> admissions@podar.org
+						<FaEnvelope />{" "}
+						<a
+							href="mailto:anv_metschool@yahoo.in"
+							className="hyperlink"
+						>
+							anv_metschool@yahoo.in
+						</a>
+						<br />
+						<a
+							href="mailto:anvms21@gmail.com"
+							className="hyperlink"
+						>
+							anvms21@gmail.com
+						</a>
 					</p>
 					<p>
-						<FaPhoneAlt /> 6366437899
+						<FaPhoneAlt /> 91- 88071 40474, +91- 90428 40474
 					</p>
 					<p>
-						<strong>School Affiliation No:</strong> KA258
+						<strong>
+							<a
+								href="https://www.anvschool.com"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hyperlink"
+							>
+								ANV School Official Website
+							</a>
+						</strong>
 					</p>
 				</div>
 
@@ -56,7 +76,7 @@ const Footer = () => {
 							<Link to="/about">About Us</Link>
 						</li>
 						<li>
-							<Link to="/why-podar">Why Podar</Link>
+							<Link to="/why-podar">Why ANV</Link>
 						</li>
 						<li>
 							<Link to="/brochure">Download Brochure</Link>
@@ -91,16 +111,25 @@ const Footer = () => {
 
 			{/* Social */}
 			<div className="footer-social">
-				<a href="#">
+				<a
+					href="https://www.facebook.com/anv.vellakovil.3?rdid=RWD97iJpY59hJOvO&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F185qkAwMZV%2F#"
+					target="_blank"
+				>
 					<FaFacebookF />
 				</a>
 				<a href="#">
 					<FaLinkedinIn />
 				</a>
-				<a href="#">
+				<a
+					href="https://www.instagram.com/anvschool?igsh=ZDVqM3lvYXAwOGMy"
+					target="_blank"
+				>
 					<FaInstagram />
 				</a>
-				<a href="#">
+				<a
+					href="https://youtube.com/@anv_school?si=IEdhJG5lgwfNE5kL"
+					target="_blank"
+				>
 					<FaYoutube />
 				</a>
 			</div>

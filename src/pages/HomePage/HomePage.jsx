@@ -132,13 +132,7 @@ const HomePage = () => {
 				<div className="carousel-wrapper" ref={section8carouselRef}>
 					{homePageData.section8.cards.map((card, index) => (
 						<div className="carousel-card" key={index}>
-							<img
-								src={
-									card.image.startsWith("http") &&
-									card.image
-								}
-								alt={card.title}
-							/>
+							<img src={card.image} alt={card.title} />
 							<h3>{card.title}</h3>
 							<p>{card.description}</p>
 						</div>
@@ -179,13 +173,7 @@ const HomePage = () => {
 				>
 					{homePageData.section10.cards.map((card, index) => (
 						<div className="carousel-card" key={index}>
-							<img
-								src={
-									card.image.startsWith("http") &&
-									card.image
-								}
-								alt={card.title}
-							/>
+							<img src={card.image} alt={card.title} />
 							<h3>{card.title}</h3>
 							<p>{card.description}</p>
 						</div>

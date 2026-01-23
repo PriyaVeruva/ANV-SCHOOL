@@ -9,7 +9,7 @@ export const headerData = [
 		link: "/",
 	},
 	{
-		label: "About Podar",
+		label: "About ANV",
 		dropdown: [
 			{ label: "About Us", link: "/aboutus" },
 			{ label: "Chairmans Message", link: "/chairman'smsg" },

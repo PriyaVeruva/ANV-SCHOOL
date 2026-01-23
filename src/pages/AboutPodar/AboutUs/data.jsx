@@ -1,42 +1,42 @@
+import chairmanImage from "../../../assets/images/President.JPG";
+import aboutUsBanner from "../../../assets/images/aboutus-banner.png";
+import schoolStudents from "../../../assets/images/schoolStudents.png";
 export const aboutusSection = {
 	section1: {
-		title: "About ANV Education Network",
-		image: "https://www.podareducation.org/assets/images/banner/about-podar-education-network-main-banner.jpg",
+		title: "About ANV Education",
+		image: aboutUsBanner,
 		description: `
-Established in 1990, ANV School was founded with a clear vision—to provide quality education that nurtures academic excellence, strong values, and confident individuals. What began as a matriculation school has grown steadily over the years, and today ANV proudly follows the Tamil Nadu State Board curriculum, offering education from Pre-KG to Grade 10.
-
+Established in 1990, ANV School was founded with a clear vision: to deliver quality education that nurtures academic excellence, strong values, and confident individuals. What began as a matriculation school has steadily grown, and today ANV proudly follows the Tamil Nadu State Board curriculum, offering education from Pre-KG to Grade 10.
 With over three decades of dedicated service in education, ANV School has earned the trust of parents and the respect of the community as an institution committed to meaningful learning and holistic development. Our philosophy is rooted in the belief that every child is unique and deserves equal opportunities to learn, grow, and succeed.
-
-At ANV, education goes beyond textbooks and examinations. Our child-centric approach integrates strong academics with co-scholastic activities, spoken English, life skills, and 21st-century competencies, preparing students to meet the challenges of a rapidly evolving world. We encourage learners to think independently, communicate confidently, and act responsibly.
-
-Our strength lies in our experienced and dedicated educators, a safe and inclusive campus, and a nurturing environment that supports both intellectual and emotional growth. Through structured teaching methodologies and continuous guidance, we ensure consistent learning standards and a strong academic foundation for every student.
-
-Beyond academics, students at ANV are encouraged to explore their interests through sports, cultural activities, leadership opportunities, and value-based programs. This balanced approach fosters discipline, creativity, teamwork, and social responsibility—qualities essential for success in higher education and life.
-
-Today, ANV School stands as a trusted educational institution committed to shaping responsible, disciplined, and globally aware citizens. We take pride in nurturing young minds who are not only academically proficient but also confident, compassionate, and prepared for the future.
-
-We invite you to become a part of the ANV School family and provide your child with a supportive, enriching, and empowering learning experience that lays a strong foundation for lifelong success.
+At ANV, education goes far beyond textbooks and examinations. Our child-centric approach blends strong academics with co-scholastic activities, spoken English, life skills, and 21st-century competencies that prepare students for the challenges of a rapidly changing world. We encourage learners to think independently, communicate confidently, and act responsibly.
+Our strength lies in our experienced and committed educators, a safe and inclusive campus, and a nurturing environment that supports both intellectual and emotional growth. Through structured teaching practices and continuous guidance, we ensure consistent learning standards and a strong academic foundation for every student.
+Beyond academics, students at ANV are encouraged to explore their interests through sports, cultural activities, leadership opportunities, and value-based programs. This balanced approach helps develop discipline, creativity, teamwork, and social responsibility—qualities essential for success in higher education and life.
+Today, ANV School stands as a trusted educational institution, dedicated to shaping responsible, disciplined, and globally aware citizens. We take pride in nurturing young minds who are not only academically capable but also confident, compassionate, and prepared for the future.
+We invite you to be a part of the ANV School family and give your child a supportive, enriching, and empowering learning experience that builds a strong foundation for lifelong success.
 `,
 	},
 	section2: {
-		image: "https://www.podareducation.org/Uploads/content/2023-7-11--16-25-23-867_about-podar-education-network.jpg",
+		image: schoolStudents,
 	},
 	section3: {
 		title1: "Our Vision",
 		description1:
-			"To be the best and be recognised as raising the traditional standards of educational possibilities and outcomes for students, parents and society.",
+			"To inspire and empower every learner to achieve academic excellence, personal growth, and social responsibility in an ever-evolving world.",
 		title2: "Our Purpose",
-		description2: "To nurture creative, critical, independent thinkers.",
+		description2:
+			"To create meaningful learning experiences that nurture curiosity, critical thinking, creativity, and confidence in every student.",
 	},
+
 	section4: {
 		title: "Our Values",
-		description1: "Learners First",
-		description2: "Taking OwnerShip",
-		description3: "Relentlessly Resourceful",
+		description1: "Learners at the Heart",
+		description2: "Ownership with Integrity",
+		description3: "Innovation through Resourcefulness",
 	},
+
 	section5: {
 		title: "Chairman’s Message",
-		image: "https://www.podareducation.org/uploads/content/2023-4-8--12-51-38-892_chairmanabout.png",
+		image: chairmanImage,
 		description: `
 At ANV School, we regard education as a profound responsibility—one that shapes not only intellect, but also character, purpose, and perspective.
 
@@ -58,68 +58,61 @@ Sincerely,
 	counterDataSection: {
 		counterData: [
 			{
-				number: "98",
+				number: "23",
 				title: "Years Of Experience",
 				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
 			},
 			{
-				number: "150",
-				title: "Podar International Schools",
+				number: "100",
+				title: "ANV School",
 				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
 			},
 			{
-				number: "123",
-				title: "Podar Partner Schools",
+				number: "12",
+				title: "ANV  Partner School",
 				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
 			},
 			{
-				number: "400",
-				title: "Podar Preschools",
+				number: "40",
+				title: "ANV Preschools",
 				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
 			},
 			{
-				number: "2,50,000",
+				number: "50,000",
 				title: "Students",
 			},
 		],
 	},
- contactData: [
-  {
-    title: "Accounts Department",
-    name: "Mr. Pradeep Dhuri",
-    role: "General Manager – Accounts (Trust)",
-    email: "podaraccounts@podar.org",
-  },
-  {
-    title: "Business Opportunities",
-    name: "Mr. Sameer Upadhyay",
-    role: "Sr. Manager",
-    email: "sameer@podar.org",
-  },
-  {
-    title: "Career & HR Development",
-    name: "Mrs. Medha Paranjpe",
-    role: "Chief Human Resources Officer",
-    email: "medha.paranjpe@podar.org",
-  },
-  {
-    title: "Podar Innovation Center",
-    name: "Mrs. Renee Bijlani",
-    role: "Chief Academics Officer (PIS)",
-    email: "pic.reneebijlani@podar.org",
-  },
-  {
-    title: "Info & Communications Technology",
-    name: "Mr. Anand Chawla",
-    role: "Chief Information Officer",
-    email: "anand@podar.org",
-  },
-  {
-    title: "Podar Prep",
-    name: "Mrs. Swati Popat Vats",
-    role: "Chief Academics Officer (Prep)",
-    email: "swatipopat@podar.org",
-  },
-]
-
+	contactData: [
+		{
+			title: "Accounts Department",
+			// name: "Mr. Pradeep Dhuri",
+			// role: "General Manager – Accounts (Trust)",
+			// email: "podaraccounts@podar.org",
+		},
+		{
+			title: "Business Opportunities",
+			// name: "Mr. Sameer Upadhyay",
+			// role: "Sr. Manager",
+			// email: "sameer@podar.org",
+		},
+		{
+			title: "Career & HR Development",
+			// name: "Mrs. Medha Paranjpe",
+			// role: "Chief Human Resources Officer",
+			// email: "medha.paranjpe@podar.org",
+		},
+		{
+			title: "Podar Innovation Center",
+			// name: "Mrs. Renee Bijlani",
+			// role: "Chief Academics Officer (PIS)",
+			// email: "pic.reneebijlani@podar.org",
+		},
+		{
+			title: "Info & Communications Technology",
+			// name: "Mr. Anand Chawla",
+			// role: "Chief Information Officer",
+			// email: "anand@podar.org",
+		},
+	],
 };

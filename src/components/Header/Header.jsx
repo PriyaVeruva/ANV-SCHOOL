@@ -16,6 +16,11 @@ const Header = () => {
 		console.log(label, "label");
 		setActiveSubMenu((prev) => (prev === label ? null : label));
 	};
+	const closeAllMenus = () => {
+		setActiveMenu(null);
+		setActiveSubMenu(null);
+	};
+
 	console.log(activeSubMenu, "activeSubMenu");
 	return (
 		<div className="header-section">
@@ -28,7 +33,7 @@ const Header = () => {
 							: "nav-item"
 					}
 					onMouseEnter={() => handleMenuEnter(ele.label)}
-					// onMouseLeave={handleMouseLeave}
+					onMouseLeave={handleMouseLeave}
 				>
 					{ele.type === "logo" ? (
 						<Link to={ele.link}>
@@ -39,7 +44,9 @@ const Header = () => {
 							/>
 						</Link>
 					) : (
-						<Link to={ele.link}>{ele.label}</Link>
+						<Link to={ele.link} onClick={closeAllMenus}>
+							{ele.label}
+						</Link>
 					)}
 
 					{/* First-level dropdown */}
@@ -49,6 +56,7 @@ const Header = () => {
 								<div key={idx} className="options">
 									<Link
 										to={sub.link}
+										onClick={closeAllMenus}
 										onMouseEnter={(e) => {
 											e.preventDefault();
 											handleSubMenuClick(
@@ -86,6 +94,9 @@ const Header = () => {
 															}
 															to={
 																nested.link
+															}
+															onClick={
+																closeAllMenus
 															}
 														>
 															{

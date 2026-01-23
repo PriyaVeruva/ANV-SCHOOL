@@ -39,13 +39,7 @@ const AboutUs = () => {
 		<div className="aboutus-page" id="aboutus">
 			{/* HERO SECTION */}
 			<section className="about-hero">
-				<img
-					src={
-						section1.image.startsWith("http") &&
-						section1.image
-					}
-					alt="About ANV"
-				/>
+				<img src={section1.image} alt="About ANV" />
 				<div className="about-hero-overlay">
 					<h1>{section1.title}</h1>
 				</div>
@@ -108,15 +102,15 @@ const AboutUs = () => {
 			<section className="values">
 				<div className="values-container">
 					<div className="value-item v1">
-						<span>Taking Ownership</span>
+						<span>Ownership with Integrity</span>
 					</div>
 
 					<div className="value-item v2">
-						<span>Learners First</span>
+						<span>Learners at the Heart</span>
 					</div>
 
 					<div className="value-item v3">
-						<span>Relentlessly Resourceful</span>
+						<span>Innovation through Resourcefulness</span>
 					</div>
 
 					<div className="center-circle">
@@ -128,13 +122,7 @@ const AboutUs = () => {
 			{/* CHAIRMAN MESSAGE */}
 			<section className="chairman" id="chairman">
 				<div className="chairman-card">
-					<img
-						src={
-							section5.image.startsWith("http") &&
-							section5.image
-						}
-						alt=""
-					/>
+					<img src={section5.image} alt="" />
 					<div className="chairman-text">
 						<h3>{section5.title}</h3>
 						<blockquote>

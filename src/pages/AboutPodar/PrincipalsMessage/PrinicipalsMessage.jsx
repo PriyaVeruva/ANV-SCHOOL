@@ -9,13 +9,7 @@ const PrincipalsMessage = () => {
 				<h2>{principalMsg.title}</h2>
 			</div>
 			<div className="principal-image">
-				<img
-					src={
-						principalMsg.image.startsWith("http") &&
-						principalMsg.image
-					}
-					alt="Principal"
-				/>
+				<img src={principalMsg.image} alt="Principal" />
 			</div>
 
 			<div className="principal-container">
