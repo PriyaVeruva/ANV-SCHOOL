@@ -15,7 +15,7 @@ export const headerData = [
 			{ label: "Chairmans Message", link: "/chairman'smsg" },
 			{ label: "ANV Initiatives", link: "/anv-initiatives" },
 			{ label: "Principal Message", link: "/principalsmsg" },
-			{ label: "School OutReach", link: "/social-outreach" },
+			{ label: "Social OutReach", link: "/social-outreach" },
 			{ label: "School Brochure", link: "" },
 		],
 	},
@@ -27,19 +27,19 @@ export const headerData = [
 				dropdown: [
 					{
 						label: "Digital Learning",
-						link: "",
+						link: "/digital-learning",
 					},
 					{
 						label: "Art Innovation Lab",
-						link: "",
+						link: "/art-innovation-lab",
 					},
 					{
 						label: "Art Curriculm",
-						link: "",
+						link: "/art-curriculum",
 					},
 				],
 			},
-			{ label: "Right Faculty", link: "" },
+			{ label: "Right Faculty", link: "/right-faculty" },
 			{
 				label: "Right Environment",
 				dropdown: [
@@ -53,8 +53,8 @@ export const headerData = [
 					},
 				],
 			},
-			{ label: "Right Approch", linlk: "" },
-			{ label: "Right Skills", link: "" },
+			{ label: "Right Approch", link: "/right-approch" },
+			{ label: "Right Skills", link: "/right-skills" },
 		],
 	},
 	{

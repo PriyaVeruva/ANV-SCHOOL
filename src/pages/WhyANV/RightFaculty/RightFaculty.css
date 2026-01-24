@@ -1,0 +1,198 @@
+.recruitment {
+	padding: 90px 6%;
+	background: linear-gradient(180deg, #f8fafc, #ffffff);
+}
+
+.recruitment__header {
+	max-width: 760px;
+	margin-bottom: 60px;
+}
+
+.recruitment__header h2 {
+	font-size: 2.3rem;
+	font-weight: 700;
+	color: #8e2a8c;
+	margin-bottom: 14px;
+}
+
+.recruitment__header p {
+	font-size: 1rem;
+	color: #475569;
+	line-height: 1.7;
+}
+
+/* Steps Container */
+.recruitment__steps {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 36px;
+}
+
+/* Step Card */
+.recruitment-step {
+	background: #ffffff;
+	border-radius: 20px;
+	padding: 36px 28px;
+	position: relative;
+	box-shadow: 0 12px 34px rgba(0, 0, 0, 0.08);
+	transition: all 0.35s ease;
+}
+
+.recruitment-step:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 22px 48px rgba(0, 0, 0, 0.12);
+}
+
+/* Step Number */
+.step-badge {
+	position: absolute;
+	top: -16px;
+	right: 24px;
+	background: linear-gradient(135deg, #6366f1, #22c55e);
+	color: #ffffff;
+	font-size: 0.9rem;
+	font-weight: 600;
+	padding: 6px 14px;
+	border-radius: 999px;
+}
+
+/* Content */
+.step-content {
+	text-align: left;
+}
+
+.step-icon {
+	font-size: 2.4rem;
+	display: inline-block;
+	margin-bottom: 18px;
+}
+
+.step-content h3 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #1e293b;
+	margin-bottom: 10px;
+}
+
+.step-content p {
+	font-size: 0.95rem;
+	color: #475569;
+	line-height: 1.6;
+}
+.training-section {
+	display: flex;
+	align-items: center;
+	gap: 3rem; /* space between text and image */
+	padding: 3rem 2rem;
+	flex-wrap: wrap; /* responsive wrapping */
+	background: #f9f9f9; /* subtle modern background */
+	border-radius: 16px;
+	margin-bottom: 10vh;
+}
+
+.training-text {
+	flex: 1;
+	min-width: 300px;
+}
+
+.training-text h2 {
+	font-size: 2.2rem;
+	margin-bottom: 1rem;
+	color: #8e2a8c;
+	font-weight: 700;
+}
+
+.training-text p {
+	font-size: 1.05rem;
+	line-height: 1.7;
+	color: #555;
+}
+
+.training-image {
+	flex: 1;
+	min-width: 300px;
+}
+
+.training-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+	object-fit: cover;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.training-image img:hover {
+	transform: scale(1.03);
+}
+.training-grid-section {
+	padding: 4rem 2rem;
+	background-color: #fdf7ff;
+}
+
+.training-grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2rem;
+}
+
+.training-card {
+	background: #ffffff;
+	border: 1px solid #e5d3f2;
+	border-radius: 12px;
+	padding: 2rem 1.5rem;
+	text-align: center;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
+.training-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.training-icon img {
+	width: 60px;
+	height: 60px;
+	margin-bottom: 1rem;
+}
+
+.training-title {
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: #6b2fae;
+	margin-bottom: 0.8rem;
+}
+
+.training-description {
+	font-size: 1rem;
+	color: #555;
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}
+
+.know-more-btn {
+	background: transparent;
+	border: none;
+	color: #a020f0;
+	font-weight: 500;
+	cursor: pointer;
+	font-size: 0.95rem;
+	transition: color 0.2s ease;
+}
+
+.know-more-btn:hover {
+	color: #6b2fae;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.recruitment {
+		padding: 70px 5%;
+	}
+
+	.recruitment__header h2 {
+		font-size: 1.9rem;
+	}
+}

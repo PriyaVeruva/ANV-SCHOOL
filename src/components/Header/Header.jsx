@@ -33,7 +33,7 @@ const Header = () => {
 							: "nav-item"
 					}
 					onMouseEnter={() => handleMenuEnter(ele.label)}
-					onMouseLeave={handleMouseLeave}
+					// onMouseLeave={handleMouseLeave}
 				>
 					{ele.type === "logo" ? (
 						<Link to={ele.link}>

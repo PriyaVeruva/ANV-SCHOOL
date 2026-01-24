@@ -1,0 +1,17 @@
+.digitalBanner {
+	width: 100%;
+	border-radius: 20px;
+	max-height: 80vh;
+	object-fit: cover;
+	/* margin-bottom: 5vh; */
+}
+.section-title {
+	text-align: center;
+	font-size: 28px;
+	font-weight: 600;
+	color: #8e2a8c;
+	margin-block: 5vh;
+}
+.paddingSection {
+	padding: 5vh 5vh 0vh 5vh;
+}

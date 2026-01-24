@@ -1,0 +1,46 @@
+/* CURRICULUM SECTION */
+.curriculum-section {
+	padding: 60px 20px;
+	background: linear-gradient(135deg, #fff4ec, #f8e8ff);
+	border-radius: 16px;
+}
+
+.curriculum-section h2 {
+	text-align: center;
+	font-size: 26px;
+	color: #8e2a8c;
+	margin-bottom: 40px;
+}
+
+.curriculum-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 24px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.curriculum-card {
+	background: #fff;
+	border-radius: 14px;
+	padding: 30px 15px;
+	text-align: center;
+	box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+	transition: transform 0.3s ease;
+}
+
+.curriculum-card:hover {
+	transform: translateY(-6px);
+}
+
+.curriculum-card .icon {
+	font-size: 30px;
+	display: block;
+	margin-bottom: 12px;
+}
+
+.curriculum-card p {
+	font-size: 14px;
+	color: #555;
+	font-weight: 500;
+}

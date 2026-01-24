@@ -1,18 +1,45 @@
-export const socialOutReach = {
-	title: "Social OutReach",
-	image: "https://www.podareducation.org/uploads/content/podar-social-outreach.jpg",
+import foodDonation from "../../../assets/images/foodDonation.jpg";
+import kitchenImg from "../../../assets/images/kitchenImg.png";
+import ngoImg from "../../../assets/images/ngoImg.png";
+import rainwaterImg from "../../../assets/images/rainwaterImg.png";
+import solarImg from "../../../assets/images/solarImg.png";
+
+export const socialOutReachData = {
+	title: "Social Outreach",
+	image: foodDonation,
+
 	description:
-		"Since its inception in 1927, Podar Education Network has been committed to social causes, supporting the marginalized and underprivileged section of society. Podar Education Network's commitment to social causes is an on-going exercise, ensuring that the group can give as much back to society as possible.",
-	section1: [
+		"Since its inception in 1990, ANV Education has been committed to social causes, supporting the marginalized and underprivileged sections of society. ANV Education Network’s commitment to social responsibility is an ongoing effort, ensuring meaningful contributions to the community.",
+
+	cards: [
 		{
-			image: "",
-			title: "Podar Charity Kitchen at Mumbai",
-			description1:
-				"Podar Education Network set up an industrial kitchen at Sewri, Mumbai to provide meals to the homeless and destitute.",
-			description2:
-				"During the Covid-19 pandemic, the Podar Charity Kitchen provided over 600 plates of wholesome meals each day to quarantined patients and frontline workers such as government officials, doctors, para-medics, etc.",
-			description3:
-				"Overall, the kitchen provided almost 40,000 plates of food during the lockdown period from 1st April 2020 to 1st July 2020.",
+			image: kitchenImg,
+			title: "ANV Charity Kitchen at Mumbai",
+			description: [
+				"ANV Education Network set up an industrial kitchen at Sewri, Mumbai to provide meals to the homeless and destitute.",
+				"During the Covid-19 pandemic, over 600 meals were served daily to frontline workers and quarantined patients.",
+			],
+		},
+		{
+			image: ngoImg,
+			title: "Partnering with NGOs",
+			description: [
+				"ANV Education Network collaborates with various NGOs to support child welfare, education, and community development initiatives.",
+			],
+		},
+		{
+			image: rainwaterImg,
+			title: "Rain Water Harvesting",
+			description: [
+				"We actively promote sustainable practices by implementing rain water harvesting systems across our school campuses.",
+			],
+		},
+		{
+			image: solarImg,
+			title: "Solar Panels",
+			description: [
+				"To support clean energy initiatives, ANV schools have installed solar panels to reduce carbon footprint.",
+			],
 		},
 	],
 };

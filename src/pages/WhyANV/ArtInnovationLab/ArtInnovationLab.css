@@ -1,0 +1,82 @@
+.innovation-lab {
+	background: #fff;
+	padding: 80px;
+}
+.innovation-lab {
+	background: #ffffff;
+}
+
+/* INTRO TEXT */
+.innovation-intro {
+	max-width: 900px;
+	margin: 50px auto 30px;
+	text-align: center;
+	padding: 0 20px;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.innovation-intro p {
+	font-size: 16px;
+	line-height: 1.7;
+	color: #555;
+}
+
+/* HIGHLIGHTS SECTION */
+.innovation-highlights {
+	padding: 60px 20px;
+	background: linear-gradient(135deg, #fff4fb, #f3e9ff);
+	margin-bottom: 10vh;
+}
+
+.innovation-highlights h3 {
+	text-align: center;
+	font-size: 24px;
+	color: #8e2a8c;
+	margin-bottom: 40px;
+}
+
+/* GRID */
+.highlights-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+/* CARD */
+.highlight-card {
+	background: #ffffff;
+	padding: 28px 22px;
+	border-radius: 18px;
+	box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+	text-align: center;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.highlight-card .icon {
+	font-size: 34px;
+	display: block;
+	margin-bottom: 16px;
+}
+
+.highlight-card p {
+	font-size: 14.5px;
+	line-height: 1.6;
+	color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+	.highlights-grid {
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,0 +1,90 @@
+.social-outreach {
+	padding: 10vh;
+	background: #fff;
+}
+
+/* Title */
+.social-title {
+	text-align: center;
+	font-size: 42px;
+	color: #b455a0;
+	font-weight: 600;
+	margin-bottom: 3vh;
+}
+
+.title-divider {
+	width: 2px;
+	height: 50px;
+	background: linear-gradient(to bottom, #b455a0, #f3c1e6);
+	margin: 0 auto 30px;
+}
+.social-section {
+	display: flex;
+	gap: 30px;
+	align-items: anchor-center;
+	margin-bottom: 10vh;
+}
+.foodDonation {
+	width: 50%;
+	border-radius: 20px;
+	background: linear-gradient(to bottom, #b455a0, #f3c1e6);
+}
+/* Description */
+.social-description {
+	max-width: 900px;
+	margin: 0 auto 60px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.8;
+	color: #444;
+}
+
+/* Grid */
+.outreach-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+}
+
+/* Card */
+.outreach-card {
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	transition: transform 0.3s ease;
+}
+
+.outreach-card:hover {
+	transform: translateY(-6px);
+}
+
+.outreach-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.outreach-card h3 {
+	color: #b455a0;
+	font-size: 18px;
+	margin: 16px;
+}
+
+.outreach-card p {
+	font-size: 14px;
+	color: #555;
+	line-height: 1.6;
+	margin: 0 16px 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.social-outreach {
+		padding: 40px 20px;
+	}
+
+	.social-title {
+		font-size: 32px;
+	}
+}

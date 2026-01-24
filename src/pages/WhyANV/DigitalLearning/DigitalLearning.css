@@ -1,0 +1,139 @@
+.digital-learning {
+	background: #fff;
+	padding: 80px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.section-description {
+	text-align: center;
+	max-width: 900px;
+	margin: 0 auto 40px;
+	color: #555;
+	line-height: 1.6;
+	font-size: 15px;
+}
+
+/* ICT SECTION */
+.infra-section {
+	background: linear-gradient(135deg, #fdeff5, #f6e6ff);
+	padding: 50px 20px;
+	border-radius: 16px;
+	margin-bottom: 60px;
+}
+
+.infra-section h2 {
+	text-align: center;
+	color: #8e2a8c;
+	margin-bottom: 30px;
+	font-size: 26px;
+}
+
+.infra-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.infra-box {
+	background: #fff;
+	padding: 18px 20px;
+	border-radius: 10px;
+	box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+	font-size: 14px;
+	color: #444;
+	text-align: center;
+}
+
+.innovation-section {
+	padding: 60px 20px;
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(135deg, #fff5fb, #f4e9ff);
+	margin-bottom: 10vh;
+}
+
+.innovation-box {
+	max-width: 900px;
+	text-align: center;
+	background: #ffffff;
+	padding: 40px 30px;
+	border-radius: 18px;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.innovation-box h3 {
+	color: #8e2a8c;
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	letter-spacing: 0.5px;
+}
+
+.divider {
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: linear-gradient(to right, #8e2a8c, #d27bd2);
+	margin: 0 auto 20px;
+	border-radius: 2px;
+}
+
+.innovation-box p {
+	color: #555;
+	font-size: 15px;
+	line-height: 1.7;
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+	.innovation-box {
+		padding: 30px 20px;
+	}
+
+	.innovation-box h3 {
+		font-size: 20px;
+	}
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+	.infra-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.curriculum-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 640px) {
+	.infra-grid,
+	.curriculum-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+	.cards-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 640px) {
+	.cards-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.section-title {
+		font-size: 24px;
+	}
+}
