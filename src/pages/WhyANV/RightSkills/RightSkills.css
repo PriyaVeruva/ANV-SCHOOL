@@ -1,18 +1,14 @@
 .right-skills {
 	font-family: "Poppins", sans-serif;
+	background: #ffffff;
 }
 
-/* Banner */
+/* ================= Banner ================= */
 .right-skills__banner {
 	position: relative;
 	height: 380px;
-	overflow: hidden;
-}
-
-.right-skills__banner img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	background-size: cover;
+	background-position: center;
 }
 
 .right-skills__overlay {
@@ -20,8 +16,8 @@
 	inset: 0;
 	background: linear-gradient(
 		to right,
-		rgba(120, 0, 120, 0.7),
-		rgba(255, 180, 220, 0.5)
+		rgba(120, 0, 120, 0.75),
+		rgba(255, 180, 220, 0.55)
 	);
 	color: #fff;
 	display: flex;
@@ -33,64 +29,144 @@
 .right-skills__overlay h1 {
 	font-size: 42px;
 	margin-bottom: 12px;
+	font-weight: 600;
 }
 
 .right-skills__overlay p {
-	max-width: 600px;
+	max-width: 620px;
 	font-size: 16px;
 	line-height: 1.6;
+	opacity: 0.95;
 }
 
-/* Highlights */
-.right-skills__highlights {
-	background: linear-gradient(135deg, #fff2f8, #fff);
-	padding: 60px 8%;
+/* ================= Intro ================= */
+.right-skills__intro {
+	max-width: 900px;
+	margin: 50px auto;
 	text-align: center;
+	padding: 0 20px;
 }
 
-.right-skills__highlights h2 {
-	color: #8a0f7a;
-	font-size: 28px;
-	margin-bottom: 40px;
+.right-skills__intro p {
+	font-size: 16px;
+	line-height: 1.7;
+	color: #555;
 }
 
-.highlights-grid {
+/* ================= Sections ================= */
+.right-skills__sections {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	gap: 30px;
+	padding: 0 8%;
+	margin-bottom: 80px;
+}
+
+.right-skills__section-card {
+	background: #fff;
+	border-radius: 18px;
+	padding: 30px;
+	border-top: 6px solid transparent;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
+.right-skills__section-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.right-skills__section-card h3 {
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+.section-desc {
+	font-size: 22px;
+	color: #666;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+.right-skills__section-card ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.right-skills__section-card li {
+	font-size: 20px;
+	color: #444;
+	padding-left: 20px;
+	margin-bottom: 8px;
+	position: relative;
+}
+
+.right-skills__section-card li::before {
+	content: "•";
+	position: absolute;
+	left: 0;
+	color: currentColor;
+	font-size: 18px;
+}
+
+/* ================= Highlights ================= */
+.right-skills__highlights {
+	background: linear-gradient(135deg, #fff2f8, #ffffff);
+	padding: 70px 8%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 25px;
+	margin-bottom: 10vh;
 }
 
 .highlight-card {
 	background: #fff;
+	border-radius: 16px;
 	padding: 30px;
-	border-radius: 14px;
-	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+	text-align: center;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
 	transition: transform 0.3s ease;
 }
 
 .highlight-card:hover {
-	transform: translateY(-8px);
+	transform: translateY(-6px);
 }
 
 .highlight-number {
 	font-size: 36px;
-	color: #d17acb;
 	font-weight: 600;
-}
-
-.highlight-card img {
-	width: 50px;
-	margin: 15px 0;
-}
-
-.highlight-card h3 {
-	font-size: 18px;
-	color: #4a004a;
+	color: #d17acb;
+	display: block;
 	margin-bottom: 10px;
 }
 
+.highlight-card h4 {
+	font-size: 24px;
+	color: #4a004a;
+	margin-bottom: 8px;
+}
+
 .highlight-card p {
-	font-size: 14px;
+	font-size: 18px;
 	color: #555;
 	line-height: 1.6;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+	.right-skills__overlay h1 {
+		font-size: 32px;
+	}
+
+	.right-skills__overlay p {
+		font-size: 14px;
+	}
+
+	.right-skills__sections,
+	.right-skills__highlights {
+		padding: 0 5%;
+	}
 }

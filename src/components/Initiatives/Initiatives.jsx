@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import { initiativesData } from "./data";
 
-const Initiatives = () => {
+const Initiatives = ({ title }) => {
 	const section9carouselRef = useRef(null);
-
+	const pathname = window.location.pathname;
 	const scroll9 = (direction) => {
 		const width = section9carouselRef.current.offsetWidth;
 		section9carouselRef.current.scrollBy({
@@ -14,7 +14,9 @@ const Initiatives = () => {
 	return (
 		<div className="section8">
 			<h2 className="section8-title">
-				{initiativesData.section9.title}
+				{pathname === "/right-skills"
+					? title
+					: initiativesData.section9.title}
 			</h2>
 			<button className="nav-btn left" onClick={() => scroll9(-1)}>
 				&#10094;
