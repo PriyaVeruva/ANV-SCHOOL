@@ -10,6 +10,7 @@ import DigitalLearning from "../../pages/WhyANV/DigitalLearning/DigitalLearning"
 import RightApproch from "../../pages/WhyANV/RightApproch/RightApproch";
 import RightFaculty from "../../pages/WhyANV/RightFaculty/RightFaculty";
 import RightSkills from "../../pages/WhyANV/RightSkills/RightSkills";
+import SchoolInfraStructure from "../../pages/WhyANV/SchoolInfraStructure/SchoolInfraStructure";
 
 export const routerData = [
 	{
@@ -59,5 +60,9 @@ export const routerData = [
 	{
 		path: "/right-skills",
 		element: <RightSkills />,
+	},
+	{
+		path: "/school-infrastructure",
+		element: <SchoolInfraStructure />,
 	},
 ];

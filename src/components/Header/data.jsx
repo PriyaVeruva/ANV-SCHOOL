@@ -45,7 +45,7 @@ export const headerData = [
 				dropdown: [
 					{
 						label: "School Infrastructure",
-						link: "",
+						link: "/school-infrastructure",
 					},
 					{
 						label: "Transport Policy",
