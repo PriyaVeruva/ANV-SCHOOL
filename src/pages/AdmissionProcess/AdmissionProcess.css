@@ -1,0 +1,145 @@
+.admission-wrapper {
+	padding: 60px 20px;
+	/* max-width: 1100px; */
+	margin: auto;
+}
+
+/* Tabs */
+.tabs {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.tab-btn {
+	padding: 12px 24px;
+	border-radius: 30px;
+	border: 1px solid #c44bd7;
+	background: transparent;
+	color: #c44bd7;
+	cursor: pointer;
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+	background: linear-gradient(135deg, #f7b7ff, #c44bd7);
+	color: #fff;
+}
+
+/* Content */
+.tab-content {
+	background: #fff;
+	padding: 40px;
+	border-radius: 16px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Steps */
+.steps {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 20px;
+}
+
+.step-card {
+	border: 1px solid #f0c9f7;
+	border-radius: 14px;
+	padding: 24px;
+}
+
+.step-card span {
+	font-size: 32px;
+	font-weight: bold;
+	color: #c44bd7;
+}
+
+.step-card p {
+	margin-top: 10px;
+	color: #555;
+}
+
+/* Documents */
+.doc-list {
+	list-style: none;
+	padding: 0;
+}
+
+.doc-list li {
+	padding: 14px;
+	border-bottom: 1px dashed #ddd;
+}
+
+/* Age Norms */
+.age-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+}
+
+.age-card {
+	text-align: center;
+	padding: 30px;
+	border-radius: 14px;
+	background: #fff5fc;
+}
+
+.age-card h4 {
+	color: #c44bd7;
+	margin-bottom: 10px;
+}
+
+/* Enquiry */
+.enquiry-box {
+	text-align: center;
+}
+
+.enquiry-btn {
+	margin-top: 20px;
+	padding: 14px 36px;
+	border-radius: 30px;
+	border: none;
+	background: linear-gradient(135deg, #f7b7ff, #c44bd7);
+	color: #fff;
+	cursor: pointer;
+}
+.faq-section {
+	padding: 80px 20px;
+	max-width: 900px;
+	margin: auto;
+}
+
+.faq-section h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.faq-item {
+	border: 1px solid #f0c9f7;
+	border-radius: 14px;
+	padding: 20px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.faq-question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.faq-item:hover {
+	transition: 0.5s ease-in-out;
+}
+.faq-question h4 {
+	margin: 0;
+	color: #333;
+}
+
+.faq-answer {
+	margin-top: 15px;
+	color: #555;
+	line-height: 1.6;
+}

@@ -1,0 +1,71 @@
+.holidays-page {
+	font-family: "Poppins", sans-serif;
+}
+
+/* Banner */
+
+.holiday-banner {
+	height: 40vh;
+	background: linear-gradient(135deg, #b455a0, #49a09d);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+}
+
+.banner-content h1 {
+	font-size: 42px;
+	margin-bottom: 10px;
+}
+
+.banner-content p {
+	font-size: 18px;
+	opacity: 0.9;
+}
+
+/* Sections */
+
+.holiday-section {
+	padding: 60px 80px;
+}
+
+.holiday-section h2 {
+	margin-bottom: 30px;
+	font-size: 28px;
+	color: #333;
+}
+
+/* Table */
+
+.table-container {
+	background: white;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+thead {
+	background: #b455a0;
+	color: white;
+}
+
+th,
+td {
+	padding: 16px;
+	text-align: left;
+}
+
+tbody tr {
+	border-bottom: 1px solid #eee;
+	transition: 0.2s;
+}
+
+tbody tr:hover {
+	background: #f7f5ff;
+}

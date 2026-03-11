@@ -12,14 +12,17 @@
 	margin-bottom: 40px;
 }
 
-.curriculum-grid {
+.curriculum-grid,
+.admission-grid {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 24px;
 	max-width: 1100px;
 	margin: 0 auto;
 }
-
+.admission-grid {
+	grid-template-columns: repeat(4, 1fr);
+}
 .curriculum-card {
 	background: #fff;
 	border-radius: 14px;

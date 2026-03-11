@@ -62,11 +62,11 @@ export const headerData = [
 		dropdown: [
 			{
 				label: "Admissions Process",
-				link: "",
+				link: "/admission-process",
 			},
 			{
 				label: "Fee Structure",
-				link: "",
+				link: "/fee-structure",
 			},
 		],
 	},
@@ -75,33 +75,33 @@ export const headerData = [
 		dropdown: [
 			{
 				label: "School Events",
-				link: "",
+				link: "/school-events",
 			},
 			{
 				label: "Transport Routes",
-				link: "",
+				link: "/transport-routes",
 			},
 			{
 				label: "Holidays and Vacations",
-				link: "",
+				link: "/holidays",
 			},
 			{
 				label: "Transport and Committee Members",
-				link: "",
+				link: "/transport",
 			},
 			{
 				label: "Circulars",
-				link: "",
+				link: "/circulars",
 			},
 			{
 				label: "Declaration Letter",
-				link: "",
+				link: "/declaration-letter",
 			},
 		],
 	},
 	{ label: "Locations", link: "" },
 	{ label: "Careers", link: "" },
 	{ label: "Blogs", link: "" },
-	{ label: "Alumni", link: "" },
-	{ label: "Contact Us", link: "" },
+	{ label: "Alumni", link: "/alumini" },
+	{ label: "Contact Us", link: "/contact-us" },
 ];

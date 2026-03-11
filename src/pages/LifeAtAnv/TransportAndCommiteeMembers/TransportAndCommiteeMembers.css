@@ -1,0 +1,138 @@
+.transport-committee-page {
+	font-family: "Poppins", sans-serif;
+}
+
+/* Banner */
+
+.committee-banner {
+	/* height: 40vh; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background: linear-gradient(135deg, #762b6b, #4e4376); */
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+.committee-banner img {
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+.committee-banner-section {
+	position: absolute;
+}
+.committee-banner h1 {
+	font-size: 42px;
+	margin-bottom: 10px;
+}
+
+.committee-banner p {
+	font-size: 18px;
+	opacity: 0.9;
+}
+
+/* Intro */
+
+.committee-intro {
+	max-width: 800px;
+	margin: 60px auto;
+	text-align: center;
+	font-size: 16px;
+	color: #555;
+	line-height: 1.7;
+	padding: 0 20px;
+}
+
+/* Members Section */
+
+.committee-members {
+	padding: 60px 80px;
+	text-align: center;
+}
+
+.committee-members h2 {
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: #b455a0;
+}
+
+.members-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 30px;
+	margin-top: 40px;
+}
+
+/* Member Card */
+
+.member-card {
+	background: white;
+	padding: 30px 20px;
+	border-radius: 12px;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+	transition: all 0.3s ease;
+}
+
+.member-card h3 {
+	font-size: 18px;
+	margin-bottom: 6px;
+	color: #b455a0;
+}
+
+.member-card span {
+	font-size: 14px;
+	color: #666;
+}
+
+.member-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Download Section */
+
+.committee-download {
+	text-align: center;
+	padding: 60px 20px;
+}
+
+.download-btn {
+	display: inline-block;
+	padding: 14px 30px;
+	background: linear-gradient(135deg, #b455a0, #8e3c7d);
+	color: white;
+	border-radius: 10px;
+	border: none;
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: 0.3px;
+	cursor: pointer;
+	text-decoration: none;
+	box-shadow: 0 6px 18px rgba(180, 85, 160, 0.3);
+	transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.download-btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 22px rgba(180, 85, 160, 0.4);
+}
+
+/* Click effect */
+.download-btn:active {
+	transform: translateY(0px);
+	box-shadow: 0 4px 10px rgba(180, 85, 160, 0.25);
+}
+
+/* Remove ugly default outline */
+.download-btn:focus {
+	outline: none;
+}
+
+/* Accessible focus style */
+.download-btn:focus-visible {
+	outline: 2px solid #dba9d2;
+	outline-offset: 3px;
+}

@@ -1,0 +1,51 @@
+.circular-banner {
+	height: 35vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #4f46e5, #9333ea);
+	color: white;
+	text-align: center;
+}
+
+.circular-list {
+	padding: 60px 80px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.circular-card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+	padding: 20px 25px;
+	border-radius: 10px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+	transition: 0.3s;
+}
+
+.circular-card:hover {
+	transform: translateY(-4px);
+}
+
+.circular-info h3 {
+	margin: 0;
+	font-size: 18px;
+}
+
+.circular-info span {
+	color: #777;
+	font-size: 14px;
+}
+
+.circular-btn {
+	padding: 10px 18px;
+	background: #8e2a8c;
+	color: white;
+	border-radius: 6px;
+	text-decoration: none;
+	font-size: 14px;
+}
