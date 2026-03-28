@@ -16,7 +16,7 @@ export const headerData = [
 			{ label: "ANV Initiatives", link: "/anv-initiatives" },
 			{ label: "Principal Message", link: "/principalsmsg" },
 			{ label: "Social OutReach", link: "/social-outreach" },
-			{ label: "School Brochure", link: "" },
+			{ label: "School Brochure", link: "/school-brocher" },
 		],
 	},
 	{
@@ -49,7 +49,7 @@ export const headerData = [
 					},
 					{
 						label: "Transport Policy",
-						link: "",
+						link: "/transport-policy",
 					},
 				],
 			},
@@ -99,9 +99,9 @@ export const headerData = [
 			},
 		],
 	},
-	{ label: "Locations", link: "" },
-	{ label: "Careers", link: "" },
-	{ label: "Blogs", link: "" },
+	{ label: "Locations", link: "/locations" },
+	{ label: "Careers", link: "/careers" },
+	{ label: "Blogs", link: "/blogs" },
 	{ label: "Alumni", link: "/alumini" },
 	{ label: "Contact Us", link: "/contact-us" },
 ];
