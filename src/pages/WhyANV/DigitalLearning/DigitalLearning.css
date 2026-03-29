@@ -135,5 +135,12 @@
 
 	.section-title {
 		font-size: 24px;
+		margin-top: 10vh;
+	}
+	.digital-learning {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		padding: 0px !important;
 	}
 }

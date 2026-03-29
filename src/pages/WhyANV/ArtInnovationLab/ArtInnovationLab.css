@@ -79,4 +79,12 @@
 	.highlights-grid {
 		grid-template-columns: 1fr;
 	}
+	.innovation-lab {
+		padding: 0px;
+		display: flex;
+		flex-direction: column;
+	}
+	.innovation-lab.paddingSection.section-title {
+		margin-top: 8vh;
+	}
 }

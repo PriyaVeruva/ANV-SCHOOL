@@ -136,3 +136,12 @@
 	outline: 2px solid #dba9d2;
 	outline-offset: 3px;
 }
+@media (max-width: 768px) {
+	.committee-members {
+		padding: 20px;
+	}
+	.committee-banner h1 {
+		font-size: 20px;
+	}
+	
+}

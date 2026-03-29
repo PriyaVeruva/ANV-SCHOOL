@@ -275,4 +275,14 @@
 		font-size: 32px;
 		text-align: center;
 	}
+	.values {
+		display: none;
+	}
+	.chairman-card {
+		flex-direction: column;
+	}
+	.chairman-card img {
+		max-width: 100%;
+		width: auto;
+	}
 }

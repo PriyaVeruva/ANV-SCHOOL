@@ -1,17 +1,63 @@
-.digitalBanner {
-	width: 100%;
-	border-radius: 20px;
-	max-height: 80vh;
-	object-fit: cover;
-	/* margin-bottom: 5vh; */
+/* CONTAINER */
+.paddingSection {
+	padding: 60px 60px 0;
 }
+
+/* TITLE */
 .section-title {
 	text-align: center;
-	font-size: 28px;
-	font-weight: 600;
+	font-size: 36px;
+	font-weight: 700;
 	color: #8e2a8c;
-	margin-block: 5vh;
+	margin-bottom: 30px;
 }
-.paddingSection {
-	padding: 5vh 5vh 0vh 5vh;
+
+/* IMAGE */
+.digitalBanner {
+	width: 100%;
+	/* height: 60vh; */
+	max-height: 820px;
+	border-radius: 20px;
+	object-fit: cover;
+	display: block;
+}
+
+/* ========================= */
+/* 📱 TABLET (768px) */
+/* ========================= */
+@media (max-width: 768px) {
+	.paddingSection {
+		padding: 1vh;
+		margin: 3vh;
+	}
+
+	.section-title {
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+
+	.digitalBanner {
+		height: 45vh;
+		border-radius: 16px;
+	}
+}
+
+/* ========================= */
+/* 📱 MOBILE (480px) */
+/* ========================= */
+@media (max-width: 480px) {
+	.paddingSection {
+		padding: 1vh;
+		margin: 3vh;
+	}
+
+	.section-title {
+		font-size: 22px;
+		line-height: 1.3;
+	}
+
+	.digitalBanner {
+		height: 35vh;
+		border-radius: 12px;
+	}
 }

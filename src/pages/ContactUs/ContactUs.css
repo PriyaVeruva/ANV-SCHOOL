@@ -50,3 +50,8 @@
 	border: none;
 	border-radius: 12px;
 }
+@media (max-width: 768px) {
+	.digital-learning {
+		padding: 44px !important;
+	}
+}

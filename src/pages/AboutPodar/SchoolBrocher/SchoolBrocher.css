@@ -208,3 +208,21 @@ section:nth-child(5) {
 		transform: translateY(0);
 	}
 }
+@media (max-width: 768px) {
+	.split {
+		flex-direction: column;
+	}
+	.split img {
+		max-width: 100%;
+		width: auto;
+	}
+	.acad-grid {
+		grid-template-columns: 1fr;
+	}
+	.facilities .grid {
+		grid-template-columns: 1fr;
+	}
+	.reverse {
+		flex-direction: column;
+	}
+}

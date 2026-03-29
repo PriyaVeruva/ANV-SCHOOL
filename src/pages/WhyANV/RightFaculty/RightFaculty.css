@@ -195,4 +195,7 @@
 	.recruitment__header h2 {
 		font-size: 1.9rem;
 	}
+	.training-section {
+		padding: 20px;
+	}
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { formData } from "./data";
+import { commonFormInputs, formData } from "./data";
+import Swal from "sweetalert2";
 import "./EnquiryForm.css";
 
 const EnquiryForm = () => {
@@ -19,6 +20,10 @@ const EnquiryForm = () => {
 
 	const handleChange = (e) => {
 		setForm({ ...form, [e.target.name]: e.target.value });
+		setErrors((prev) => ({
+			...prev,
+			[e.target.name]: "",
+		}));
 	};
 
 	const validate = () => {
@@ -42,7 +47,7 @@ const EnquiryForm = () => {
 		}
 
 		if (!form.grade) newErrors.grade = "Please select grade";
-		if (!form.captcha) newErrors.captcha = "Captcha required";
+		// if (!form.captcha) newErrors.captcha = "Captcha required";
 
 		setErrors(newErrors);
 		return Object.keys(newErrors).length === 0;
@@ -50,12 +55,43 @@ const EnquiryForm = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+
 		if (validate()) {
-			alert("Enquiry submitted successfully ✅");
+			Swal.fire({
+				title: "🎉 Success!",
+				html: "<b>Your enquiry has been submitted</b><br/>We will contact you soon.",
+				icon: "success",
+				showConfirmButton: true,
+				confirmButtonText: "Great!",
+				background: "#fff",
+				color: "#333",
+				backdrop: `rgba(0,0,0,0.4)`,
+			});
+
 			console.log(form);
+
+			setForm({
+				state: "Tamilnadu",
+				city: "Chennai",
+				school: "ANV",
+				firstName: "",
+				lastName: "",
+				grade: "",
+				email: "",
+				mobileNo: "",
+			});
+
+			setErrors({});
+		} else {
+			Swal.fire({
+				title: "Oops ⚠️",
+				text: "Please fill all required fields correctly",
+				icon: "error",
+				confirmButtonText: "Got it",
+				confirmButtonColor: "#d33",
+			});
 		}
 	};
-
 	return (
 		<div className="enquiry-wrapper">
 			<h2 className="enquiry-title">{formData.title}</h2>
@@ -63,83 +99,46 @@ const EnquiryForm = () => {
 
 			<form className="enquiry-form" onSubmit={handleSubmit}>
 				<div className="form-grid">
-					<select
-						name="state"
-						value={form.state}
-						onChange={handleChange}
-					>
-						<option>Tamilnadu</option>
-						<option>Karnataka</option>
-					</select>
+					<div className="form-inputs-section">
+						<span>State</span>
+						<select
+							name="state"
+							value={form.state}
+							onChange={handleChange}
+						>
+							<option>Tamilnadu</option>
+							<option>Karnataka</option>
+						</select>
+					</div>
 
-					<select
-						name="city"
-						value={form.city}
-						onChange={handleChange}
-					>
-						<option>Chennai</option>
-						<option>Bengaluru</option>
-					</select>
+					<div className="form-inputs-section">
+						<span>City</span>
+						<select
+							name="city"
+							value={form.city}
+							onChange={handleChange}
+						>
+							<option>Chennai</option>
+							<option>Bengaluru</option>
+						</select>
+					</div>
 
-					<input
-						type="text"
-						name="school"
-						value={form.school}
-						placeholder="School Name"
-						onChange={handleChange}
-						disabled
-					/>
-
-					<input
-						type="text"
-						name="firstName"
-						placeholder="Student's First Name"
-						onChange={handleChange}
-					/>
-					{errors.firstName && (
-						<span className="error">{errors.firstName}</span>
-					)}
-
-					<input
-						type="text"
-						name="lastName"
-						placeholder="Student's Last Name"
-						onChange={handleChange}
-					/>
-					{errors.lastName && (
-						<span className="error">{errors.lastName}</span>
-					)}
-
-					<select name="grade" onChange={handleChange}>
-						<option value="">Select Grade</option>
-						<option>Grade 1</option>
-						<option>Grade 2</option>
-						<option>Grade 3</option>
-					</select>
-					{errors.grade && (
-						<span className="error">{errors.grade}</span>
-					)}
-
-					<input
-						type="email"
-						name="email"
-						placeholder="Email"
-						onChange={handleChange}
-					/>
-					{errors.email && (
-						<span className="error">{errors.email}</span>
-					)}
-
-					<input
-						type="text"
-						name="mobileNo"
-						placeholder="Mobile Number"
-						onChange={handleChange}
-					/>
-					{errors.mobileNo && (
-						<span className="error">{errors.mobileNo}</span>
-					)}
-
+					<div className="form-inputs-section">
+						<span>Grade</span>
+						<select
+							name="grade"
+							value={form.grade}
+							onChange={handleChange}
+						>
+							<option value="">Select Grade</option>
+							<option>Grade 1</option>
+							<option>Grade 2</option>
+							<option>Grade 3</option>
+						</select>
+						{errors.grade && (
+							<span className="error">{errors.grade}</span>
+						)}
+					</div>
 					{/* <input
 						type="text"
 						name="captcha"
@@ -149,6 +148,30 @@ const EnquiryForm = () => {
 					{errors.captcha && (
 						<span className="error">{errors.captcha}</span>
 					)} */}
+					{commonFormInputs.map((ele, i) => {
+						return (
+							<div className="form-inputs-section">
+								<span>{ele.label}</span>
+								<input
+									type={ele.type}
+									name={ele.name}
+									placeholder={ele.placeholder}
+									disabled={ele.disabled}
+									onChange={handleChange}
+									key={i}
+									maxLength={ele.maxLength}
+									inputMode={ele.inputMode}
+									pattern={ele.pattern}
+									value={form[ele.name]}
+								/>
+								{errors[ele.name] && (
+									<span className="error">
+										{errors[ele.name]}
+									</span>
+								)}
+							</div>
+						);
+					})}
 				</div>
 
 				<button type="submit" className="submit-btn">

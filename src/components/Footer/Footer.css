@@ -1,3 +1,4 @@
+/* FOOTER BASE */
 .site-footer {
 	background: linear-gradient(180deg, #ffffff 0%, #fdf2fb 100%);
 	color: #333;
@@ -5,7 +6,9 @@
 	margin-top: 80px;
 }
 
-/* Top strip */
+/* ========================= */
+/* TOP STRIP */
+/* ========================= */
 .footer-top {
 	padding: 30px 60px;
 	border-bottom: 1px solid #ddd;
@@ -16,14 +19,17 @@
 	margin-bottom: 10px;
 }
 
-/* Main container */
+/* ========================= */
+/* MAIN GRID */
+/* ========================= */
 .footer-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-	gap: 50px;
+	gap: 40px;
 	padding: 50px 60px;
 }
 
+/* COLUMN */
 .footer-col h4 {
 	color: #9c1d8f;
 	font-size: 18px;
@@ -42,7 +48,7 @@
 	color: #9c1d8f;
 }
 
-/* Links */
+/* LINKS */
 .footer-col ul {
 	list-style: none;
 	padding: 0;
@@ -62,25 +68,27 @@
 	color: #9c1d8f;
 }
 
-/* Social */
+/* ========================= */
+/* SOCIAL */
+/* ========================= */
 .footer-social {
 	display: flex;
 	justify-content: center;
 	gap: 16px;
 	align-items: center;
 	padding-bottom: 25px;
+	flex-wrap: wrap;
 }
 
 .footer-social a {
-	width: 60px;
-	height: 60px;
+	width: 55px;
+	height: 55px;
 	border-radius: 50%;
 	background: #9c1d8f;
 	color: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* place-items: center; */
 	transition: 0.3s;
 }
 
@@ -88,11 +96,82 @@
 	background: #7a166f;
 }
 
-/* Bottom */
+/* ========================= */
+/* BOTTOM */
+/* ========================= */
 .footer-bottom {
 	text-align: center;
 	padding: 15px;
 	border-top: 1px solid #ddd;
 	font-size: 13px;
 	color: #777;
+}
+
+/* ========================= */
+/* 💻 TABLET (768px) */
+/* ========================= */
+@media (max-width: 768px) {
+	.footer-top {
+		padding: 20px;
+		text-align: center;
+	}
+
+	.footer-container {
+		padding: 40px 20px;
+		gap: 30px;
+	}
+
+	.footer-col {
+		text-align: center;
+	}
+
+	.footer-col p {
+		text-align: center;
+	}
+
+	.footer-col ul {
+		padding: 0;
+	}
+
+	.footer-social a {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+/* ========================= */
+/* 📱 MOBILE (480px) */
+/* ========================= */
+@media (max-width: 480px) {
+	.footer-top {
+		padding: 15px;
+	}
+
+	.footer-container {
+		padding: 30px 15px;
+		gap: 25px;
+	}
+
+	.footer-col h4 {
+		font-size: 16px;
+	}
+
+	.footer-col p,
+	.footer-col ul li a {
+		font-size: 13px;
+	}
+
+	.footer-social {
+		gap: 12px;
+	}
+
+	.footer-social a {
+		width: 45px;
+		height: 45px;
+	}
+
+	.footer-bottom {
+		font-size: 12px;
+		padding: 10px;
+	}
 }

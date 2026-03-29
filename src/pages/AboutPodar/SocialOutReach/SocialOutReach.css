@@ -81,10 +81,18 @@
 /* Responsive */
 @media (max-width: 768px) {
 	.social-outreach {
-		padding: 40px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
-
+	.social-section {
+		flex-direction: column;
+	}
 	.social-title {
 		font-size: 32px;
+	}
+	.foodDonation {
+		max-width: 100%;
+		width: auto;
 	}
 }

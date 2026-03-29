@@ -79,3 +79,11 @@
 .transport-safety li {
 	margin: 10px 0;
 }
+@media (max-width: 768px) {
+	.routes-container {
+		padding: 20px;
+	}
+	.transport-overlay {
+		top: 57%;
+	}
+}

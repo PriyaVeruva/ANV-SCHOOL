@@ -2,117 +2,213 @@ import { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { headerData } from "./data";
+
 const Header = () => {
 	const [activeMenu, setActiveMenu] = useState(null);
 	const [activeSubMenu, setActiveSubMenu] = useState(null);
-	const handleMenuEnter = (label) => {
-		setActiveMenu(label);
-		// setActiveSubMenu(null);
-	};
-	const handleMouseLeave = () => {
-		setActiveMenu(null);
-	};
-	const handleSubMenuClick = (label) => {
-		console.log(label, "label");
-		setActiveSubMenu((prev) => (prev === label ? null : label));
-	};
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
 	const closeAllMenus = () => {
 		setActiveMenu(null);
 		setActiveSubMenu(null);
+		setIsMobileMenuOpen(false);
 	};
 
-	console.log(activeSubMenu, "activeSubMenu");
 	return (
 		<div className="header-section">
-			{headerData.map((ele, i) => (
-				<nav
-					key={i}
-					className={
-						activeMenu === ele.label && ele.type !== "logo"
-							? "highlight-nav-item"
-							: "nav-item"
-					}
-					onMouseEnter={() => handleMenuEnter(ele.label)}
-					// onMouseLeave={handleMouseLeave}
+			{/* MOBILE HEADER */}
+			<div className="mobile-header">
+				<img
+					src={headerData[0].image}
+					alt="logo"
+					className="logo"
+				/>
+
+				<div
+					className={`hamburger ${isMobileMenuOpen ? "open" : ""}`}
+					onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 				>
-					{ele.type === "logo" ? (
-						<Link to={ele.link}>
-							<img
-								src={ele.image}
-								alt="logo"
-								className="logo"
-							/>
-						</Link>
-					) : (
-						<Link to={ele.link} onClick={closeAllMenus}>
-							{ele.label}
-						</Link>
-					)}
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
 
-					{/* First-level dropdown */}
-					{activeMenu === ele.label && ele.dropdown && (
-						<div className="sub-menus">
-							{ele.dropdown.map((sub, idx) => (
-								<div key={idx} className="options">
-									<Link
-										to={sub.link}
-										onClick={closeAllMenus}
-										onMouseEnter={(e) => {
-											e.preventDefault();
-											handleSubMenuClick(
-												sub.label,
-											);
-										}}
-									>
-										{sub.label}
-									</Link>
+			{/* DESKTOP MENU */}
+			<div className="desktop-menu">
+				{headerData.map((ele, i) => (
+					<nav
+						key={i}
+						className={
+							activeMenu === ele.label &&
+							ele.type !== "logo"
+								? "highlight-nav-item"
+								: "nav-item"
+						}
+						onMouseEnter={() => setActiveMenu(ele.label)}
+						// onMouseLeave={() => setActiveMenu(null)}
+					>
+						{ele.type === "logo" ? (
+							<Link to={ele.link}>
+								<img
+									src={ele.image}
+									alt="logo"
+									className="logo"
+								/>
+							</Link>
+						) : (
+							<Link to={ele.link}>{ele.label}</Link>
+						)}
 
-									{/* Second-level dropdown */}
-									{activeSubMenu === sub.label &&
-										sub.dropdown && (
-											<div
-												className={
-													sub.dropdown
-														? "nested-menu"
-														: "nested-menu"
-												}
-												onClick={(e) => {
-													e.preventDefault();
-													handleSubMenuClick(
-														sub.label,
-													);
-												}}
-											>
-												{sub.dropdown.map(
-													(
-														nested,
-														nidx,
-													) => (
-														<Link
-															key={
-																nidx
-															}
-															to={
-																nested.link
-															}
-															onClick={
-																closeAllMenus
-															}
-														>
-															{
-																nested.label
-															}
-														</Link>
-													),
-												)}
-											</div>
-										)}
-								</div>
-							))}
+						{/* DESKTOP DROPDOWN */}
+						{activeMenu === ele.label && ele.dropdown && (
+							<div className="sub-menus">
+								{ele.dropdown.map((sub, idx) => (
+									<div key={idx} className="options">
+										<Link
+											to={sub.link}
+											onMouseEnter={() =>
+												setActiveSubMenu(
+													sub.label,
+												)
+											}
+										>
+											{sub.label}
+										</Link>
+
+										{activeSubMenu ===
+											sub.label &&
+											sub.dropdown && (
+												<div className="nested-menu">
+													{sub.dropdown.map(
+														(
+															nested,
+															nidx,
+														) => (
+															<Link
+																key={
+																	nidx
+																}
+																to={
+																	nested.link
+																}
+															>
+																{
+																	nested.label
+																}
+															</Link>
+														),
+													)}
+												</div>
+											)}
+									</div>
+								))}
+							</div>
+						)}
+					</nav>
+				))}
+			</div>
+
+			{/* MOBILE MENU */}
+			<div className={`mobile-menu ${isMobileMenuOpen ? "show" : ""}`}>
+				{headerData.map((ele, i) => (
+					<div key={i} className="mobile-item">
+						{/* MAIN ITEM */}
+						<div
+							className={
+								activeMenu === ele.label
+									? "highlight-nav-item"
+									: "mobile-link"
+							}
+							onClick={(e) => {
+								if (ele.dropdown) {
+									e.preventDefault();
+									setActiveMenu((prev) =>
+										prev === ele.label
+											? null
+											: ele.label,
+									);
+								} else {
+									closeAllMenus();
+								}
+							}}
+						>
+							<Link to={ele.link}>{ele.label}</Link>
+							{ele.dropdown && (
+								<span>
+									{activeMenu === ele.label
+										? "−"
+										: "+"}
+								</span>
+							)}
 						</div>
-					)}
-				</nav>
-			))}
+
+						{/* FIRST DROPDOWN */}
+						{activeMenu === ele.label && ele.dropdown && (
+							<div className="mobile-dropdown">
+								{ele.dropdown.map((sub, idx) => (
+									<div
+										key={idx}
+										className="mobile-dropdown-section"
+									>
+										<div
+											className="mobile-sublink"
+											onClick={(e) => {
+												if (sub.dropdown) {
+													e.preventDefault();
+													setActiveSubMenu(
+														(prev) =>
+															prev ===
+															sub.label
+																? null
+																: sub.label,
+													);
+												} else {
+													closeAllMenus();
+												}
+											}}
+										>
+											<Link to={sub.link}>
+												{sub.label}
+											</Link>
+										</div>
+
+										{/* SECOND DROPDOWN */}
+										{activeSubMenu ===
+											sub.label &&
+											sub.dropdown && (
+												<div className="mobile-nested">
+													{sub.dropdown.map(
+														(
+															nested,
+															nidx,
+														) => (
+															<Link
+																key={
+																	nidx
+																}
+																to={
+																	nested.link
+																}
+																onClick={
+																	closeAllMenus
+																}
+															>
+																{
+																	nested.label
+																}
+															</Link>
+														),
+													)}
+												</div>
+											)}
+									</div>
+								))}
+							</div>
+						)}
+					</div>
+				))}
+			</div>
 		</div>
 	);
 };
