@@ -11,7 +11,7 @@ import remedialLearning from "../../assets/images/remedial-learning.jpg";
 
 export const homePageData = {
 	section1: {
-		title: "Welcome to one of the best ICSE Schools in Chennai",
+		title: "Welcome to one of the best ANV MATRIC SCHOOL",
 		subtitle: "Empowering Tomorrow's Leaders Today",
 		image: banner,
 	},

@@ -239,7 +239,7 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.art-support {
 		padding: 60px 5%;
 	}
@@ -247,10 +247,10 @@
 	.art-support__header h2 {
 		font-size: 1.8rem;
 	}
-}
+} */
 
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.art-curriculum {
 		padding: 60px 5%;
 	}
@@ -258,10 +258,10 @@
 	.art-curriculum__header h2 {
 		font-size: 1.8rem;
 	}
-}
+} */
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.vm-cards {
 		grid-template-columns: 1fr;
 	}
@@ -277,4 +277,4 @@
 	.art-vision-mission h2 {
 		font-size: 2rem;
 	}
-}
+} */

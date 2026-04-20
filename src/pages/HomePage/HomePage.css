@@ -434,6 +434,10 @@ Total width for 4 cards:
 	.section3 {
 		padding: 0px;
 	}
+	.carousel-card {
+		flex: 0 0 calc(104% - 15px);
+		max-width: none;
+	}
 }
 
 /* Responsive */
@@ -487,7 +491,7 @@ Total width for 4 cards:
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.section1 img {
 		height: 400px;
 	}
@@ -523,7 +527,7 @@ Total width for 4 cards:
 	.section8 {
 		padding: 0px;
 	}
-}
+} */
 
 /* EXTRA SMALL DEVICES */
 

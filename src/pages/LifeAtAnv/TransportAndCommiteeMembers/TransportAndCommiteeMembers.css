@@ -136,7 +136,7 @@
 	outline: 2px solid #dba9d2;
 	outline-offset: 3px;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.committee-members {
 		padding: 20px;
 	}
@@ -144,4 +144,4 @@
 		font-size: 20px;
 	}
 	
-}
+} */

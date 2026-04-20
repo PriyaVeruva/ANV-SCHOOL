@@ -26,6 +26,5 @@ export const contactUsData = {
 		mobile: "+91- 88071 40474",
 	},
 
-	mapEmbedUrl:
-		"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.123456789!2d80.2!3d13.0",
+	mapEmbedUrl: "https://maps.app.goo.gl/JCDfxFpxZdsuFUX1A",
 };

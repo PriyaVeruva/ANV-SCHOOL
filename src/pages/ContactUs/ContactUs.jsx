@@ -9,7 +9,6 @@ const ContactUs = () => {
 	return (
 		<section className="digital-learning">
 			<CommonBanner title={title} image={image} />
-
 			<div className="contact-container">
 				{/* Address Card */}
 				<div className="contact-card">
@@ -57,19 +56,18 @@ const ContactUs = () => {
 					</p>
 				</div>
 			</div>
-
 			{/* Map Section */}
 			<div className="map-section">
 				<iframe
-					title="ANV School Map"
-					src="https://www.google.com/maps?q=ANV%20School%20Chennai%20Tamil%20Nadu&output=embed"
+					title="ANV Matric School Map"
+					src="https://www.google.com/maps?output=embed&q=ANV+Matric+School+Vellakovil"
 					width="100%"
 					height="350"
 					style={{ border: 0, borderRadius: "12px" }}
 					loading="lazy"
 					allowFullScreen
 				></iframe>
-			</div>
+			</div>{" "}
 		</section>
 	);
 };

@@ -72,7 +72,7 @@
 /* ========================= */
 /* 📱 TABLET (768px) */
 /* ========================= */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.curriculum-section {
 		padding: 50px 15px;
 	}
@@ -95,7 +95,7 @@
 	.curriculum-card .icon {
 		font-size: 26px;
 	}
-}
+} */
 
 /* ========================= */
 /* 📱 MOBILE (480px) */
