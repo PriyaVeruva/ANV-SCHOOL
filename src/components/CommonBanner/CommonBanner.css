@@ -25,7 +25,7 @@
 /* ========================= */
 /* 📱 TABLET (768px) */
 /* ========================= */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.paddingSection {
 		padding: 1vh;
 		margin: 3vh;
@@ -40,7 +40,7 @@
 		height: 45vh;
 		border-radius: 16px;
 	}
-} */
+}
 
 /* ========================= */
 /* 📱 MOBILE (480px) */

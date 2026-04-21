@@ -79,7 +79,7 @@
 }
 
 /* Responsive */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.social-outreach {
 		display: flex;
 		flex-direction: column;
@@ -95,4 +95,4 @@
 		max-width: 100%;
 		width: auto;
 	}
-} */
+}

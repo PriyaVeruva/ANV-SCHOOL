@@ -124,8 +124,8 @@
 .event-content p {
 	color: #666;
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.events-grid {
 		padding: 0px;
 	}
-} */
+}

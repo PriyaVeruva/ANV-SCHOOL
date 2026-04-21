@@ -208,7 +208,7 @@ section:nth-child(5) {
 		transform: translateY(0);
 	}
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.split {
 		flex-direction: column;
 	}
@@ -225,4 +225,4 @@ section:nth-child(5) {
 	.reverse {
 		flex-direction: column;
 	}
-} */
+}

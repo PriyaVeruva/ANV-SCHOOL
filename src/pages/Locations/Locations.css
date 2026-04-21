@@ -109,8 +109,8 @@
 .loc-card-content button:hover {
 	opacity: 0.85;
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.loc-grid {
 		padding: 20px;
 	}
-} */
+}

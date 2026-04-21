@@ -125,8 +125,8 @@
 	background: #ede9fe;
 	transform: scale(1.02);
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.hero-overlay h1 {
 		font-size: 24px;
 	}
-} */
+}

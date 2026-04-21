@@ -83,15 +83,20 @@ Gap = 30px
 Total width for 4 cards:
 
 (320 * 4) + (30 * 3) = 1370px */
+
 .carousel-wrapper {
 	display: flex;
-	gap: 30px;
-	overflow: hidden; /* 👈 IMPORTANT */
+	gap: 20px;
+	overflow-x: auto;
 	scroll-behavior: smooth;
-	width: 1370px; /* 4 cards only */
-	margin: auto;
-}
 
+	width: 100%; /* ✅ FIX */
+	max-width: 1370px; /* optional */
+	margin: auto;
+	padding: 0 20px; /* small side spacing */
+
+	scrollbar-width: none;
+}
 .carousel-wrapper::-webkit-scrollbar {
 	display: none;
 }
@@ -104,6 +109,7 @@ Total width for 4 cards:
 	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 	transition: transform 0.3s ease;
+	flex-shrink: 0;
 }
 
 .carousel-card:hover {
@@ -416,6 +422,26 @@ Total width for 4 cards:
 }
 
 /* Responsive */
+/* Tablet */
+@media (max-width: 1024px) {
+	.carousel-card {
+		min-width: 45%; /* 2 cards */
+	}
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+	.carousel-card {
+		min-width: 100%; /* 1 card */
+	}
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+	.carousel-card {
+		min-width: 100%;
+	}
+}
 @media (max-width: 1200px) {
 	.section8-cards {
 		grid-template-columns: repeat(2, 1fr);
@@ -482,16 +508,19 @@ Total width for 4 cards:
 	}
 	.carousel-wrapper {
 		display: flex;
-		gap: 0px;
-		overflow-x: auto; /* 👈 allow scroll */
+		gap: 30px;
+		overflow-x: auto;
 		scroll-behavior: smooth;
-		width: 100%; /* 👈 full width */
-		margin: 0; /* 👈 remove auto centering */
+		width: 100%; /* ✅ FIX */
+		margin: auto;
+		padding: 0 20px; /* small side spacing */
+
+		scrollbar-width: none;
 	}
 }
 
 /* Responsive */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.section1 img {
 		height: 400px;
 	}
@@ -527,7 +556,11 @@ Total width for 4 cards:
 	.section8 {
 		padding: 0px;
 	}
-} */
+	.section5 {
+		flex-direction: column;
+		align-items: center;
+	}
+}
 
 /* EXTRA SMALL DEVICES */
 

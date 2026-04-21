@@ -150,7 +150,7 @@ const EnquiryForm = () => {
 					)} */}
 					{commonFormInputs.map((ele, i) => {
 						return (
-							<div className="form-inputs-section">
+							<div className="form-inputs-section" key={i}>
 								<span>{ele.label}</span>
 								<input
 									type={ele.type}

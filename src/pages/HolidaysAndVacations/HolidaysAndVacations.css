@@ -69,11 +69,11 @@ tbody tr {
 tbody tr:hover {
 	background: #f7f5ff;
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.table-container {
 		overflow-x: auto;
 	}
 	.holiday-section {
 		padding: 10px;
 	}
-} */
+}

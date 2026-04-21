@@ -112,13 +112,22 @@ const Header = () => {
 			{/* MOBILE MENU */}
 			<div className={`mobile-menu ${isMobileMenuOpen ? "show" : ""}`}>
 				{headerData.map((ele, i) => (
-					<div key={i} className="mobile-item">
+					<div
+						key={i}
+						className={
+							ele.type === "logo"
+								? "hidden"
+								: "mobile-item"
+						}
+					>
 						{/* MAIN ITEM */}
 						<div
 							className={
 								activeMenu === ele.label
 									? "highlight-nav-item"
-									: "mobile-link"
+									: ele.type === "logo"
+										? ""
+										: "mobile-link"
 							}
 							onClick={(e) => {
 								if (ele.dropdown) {

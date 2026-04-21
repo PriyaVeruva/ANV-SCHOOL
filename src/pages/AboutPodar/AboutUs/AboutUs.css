@@ -261,7 +261,7 @@
 }
 
 /* RESPONSIVE */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.vision-purpose {
 		grid-template-columns: 1fr;
 	}
@@ -285,4 +285,4 @@
 		max-width: 100%;
 		width: auto;
 	}
-} */
+}

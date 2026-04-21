@@ -187,7 +187,7 @@
 }
 
 /* Responsive */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.recruitment {
 		padding: 70px 5%;
 	}
@@ -198,4 +198,4 @@
 	.training-section {
 		padding: 20px;
 	}
-} */
+}

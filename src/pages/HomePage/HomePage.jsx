@@ -2,7 +2,7 @@ import EnquiryForm from "../../components/EnquiryForm/EnquiryForm";
 import Counter from "../../components/Counter/Counter";
 import { homePageData } from "./data";
 import "./HomePage.css";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import QuickLinks from "../../components/QuickLinks/QuickLinks";
 import Initiatives from "../../components/Initiatives/Initiatives";
 const HomePage = () => {
@@ -17,6 +17,7 @@ const HomePage = () => {
 			behavior: "smooth",
 		});
 	};
+
 	const scroll8 = (direction) => {
 		const width = section8carouselRef.current.offsetWidth;
 		section8carouselRef.current.scrollBy({
@@ -31,6 +32,61 @@ const HomePage = () => {
 			behavior: "smooth",
 		});
 	};
+
+	useEffect(() => {
+		const refs = [carouselRef, section8carouselRef, section10carouselRef];
+
+		const intervals = [];
+
+		refs.forEach((ref) => {
+			if (!ref.current) return;
+
+			const container = ref.current;
+
+			const autoScroll = () => {
+				const width = container.offsetWidth;
+
+				if (
+					container.scrollLeft + container.clientWidth >=
+					container.scrollWidth - 5
+				) {
+					container.scrollTo({
+						left: 0,
+						behavior: "smooth",
+					});
+				} else {
+					container.scrollBy({
+						left: width,
+						behavior: "smooth",
+					});
+				}
+			};
+
+			const interval = setInterval(autoScroll, 3000);
+			intervals.push(interval);
+
+			// pause on hover
+			const stop = () => clearInterval(interval);
+			const start = () => {
+				const newInterval = setInterval(autoScroll, 3000);
+				intervals.push(newInterval);
+			};
+
+			container.addEventListener("mouseenter", stop);
+			container.addEventListener("mouseleave", start);
+		});
+
+		return () => {
+			intervals.forEach(clearInterval);
+
+			refs.forEach((ref) => {
+				if (!ref.current) return;
+
+				ref.current.replaceWith(ref.current.cloneNode(true));
+				// quick cleanup of listeners
+			});
+		};
+	}, []);
 	return (
 		<>
 			<div className="section1">
