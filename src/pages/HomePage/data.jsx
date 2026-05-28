@@ -81,23 +81,23 @@ export const homePageData = {
 				title: "Years Of Experience",
 				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
 			},
+			// {
+			// 	number: "100",
+			// 	title: "ANV School",
+			// 	image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
+			// },
+			// {
+			// 	number: "12",
+			// 	title: "ANV  Partner School",
+			// 	image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
+			// },
+			// {
+			// 	number: "40",
+			// 	title: "ANV Preschools",
+			// 	image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
+			// },
 			{
-				number: "100",
-				title: "ANV School",
-				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
-			},
-			{
-				number: "12",
-				title: "ANV  Partner School",
-				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
-			},
-			{
-				number: "40",
-				title: "ANV Preschools",
-				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
-			},
-			{
-				number: "50,000",
+				number: "500",
 				title: "Students",
 			},
 		],

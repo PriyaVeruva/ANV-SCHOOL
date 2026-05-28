@@ -6,7 +6,7 @@ import "./EnquiryForm.css";
 const EnquiryForm = () => {
 	const [form, setForm] = useState({
 		state: "Tamilnadu",
-		city: "Chennai",
+		city: "Vellakovil",
 		school: "ANV",
 		firstName: "",
 		lastName: "",
@@ -72,7 +72,7 @@ const EnquiryForm = () => {
 
 			setForm({
 				state: "Tamilnadu",
-				city: "Chennai",
+				city: "Vellakovil",
 				school: "ANV",
 				firstName: "",
 				lastName: "",
@@ -107,7 +107,7 @@ const EnquiryForm = () => {
 							onChange={handleChange}
 						>
 							<option>Tamilnadu</option>
-							<option>Karnataka</option>
+							{/* <option>Karnataka</option> */}
 						</select>
 					</div>
 
@@ -118,8 +118,8 @@ const EnquiryForm = () => {
 							value={form.city}
 							onChange={handleChange}
 						>
-							<option>Chennai</option>
-							<option>Bengaluru</option>
+							<option>Vellakovil</option>
+							{/* <option>Bengaluru</option> */}
 						</select>
 					</div>
 
@@ -131,9 +131,17 @@ const EnquiryForm = () => {
 							onChange={handleChange}
 						>
 							<option value="">Select Grade</option>
+							<option>LKG</option>
+							<option>UKG</option>
 							<option>Grade 1</option>
 							<option>Grade 2</option>
 							<option>Grade 3</option>
+							<option>Grade 4</option>
+							<option>Grade 5</option>
+							<option>Grade 6</option>
+							<option>Grade 7</option>
+							<option>Grade 8</option>
+							<option>Grade 9</option>
 						</select>
 						{errors.grade && (
 							<span className="error">{errors.grade}</span>

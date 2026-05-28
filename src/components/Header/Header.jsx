@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { headerData } from "./data";
@@ -8,10 +8,28 @@ const Header = () => {
 	const [activeSubMenu, setActiveSubMenu] = useState(null);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+	// A reference pointer to store our active timeout ID
+	const timeoutRef = useRef(null);
+
 	const closeAllMenus = () => {
+		if (timeoutRef.current) clearTimeout(timeoutRef.current);
 		setActiveMenu(null);
 		setActiveSubMenu(null);
 		setIsMobileMenuOpen(false);
+	};
+
+	// Safely schedules a menu close action when cursor wanders away
+	const handleMouseLeave = () => {
+		timeoutRef.current = setTimeout(() => {
+			setActiveMenu(null);
+			setActiveSubMenu(null);
+		}, 150); // 150ms buffer prevents flickering across element gaps
+	};
+
+	// Instantly intercepts and cancels a scheduled close if cursor moves back in
+	const handleMouseEnter = (menuLabel) => {
+		if (timeoutRef.current) clearTimeout(timeoutRef.current);
+		setActiveMenu(menuLabel);
 	};
 
 	return (
@@ -45,11 +63,11 @@ const Header = () => {
 								? "highlight-nav-item"
 								: "nav-item"
 						}
-						onMouseEnter={() => setActiveMenu(ele.label)}
-						// onMouseLeave={() => setActiveMenu(null)}
+						onMouseEnter={() => handleMouseEnter(ele.label)}
+						onMouseLeave={handleMouseLeave} // FIX 1: Stable timer exit
 					>
 						{ele.type === "logo" ? (
-							<Link to={ele.link}>
+							<Link to={ele.link} onClick={closeAllMenus}>
 								<img
 									src={ele.image}
 									alt="logo"
@@ -57,29 +75,63 @@ const Header = () => {
 								/>
 							</Link>
 						) : (
-							<Link to={ele.link}>{ele.label}</Link>
+							<Link
+								to={ele.link}
+								onClick={() => {
+									if (!ele.dropdown) closeAllMenus();
+								}}
+							>
+								{ele.label}
+							</Link>
 						)}
 
 						{/* DESKTOP DROPDOWN */}
 						{activeMenu === ele.label && ele.dropdown && (
 							<div className="sub-menus">
 								{ele.dropdown.map((sub, idx) => (
-									<div key={idx} className="options">
-										<Link
-											to={sub.link}
-											onMouseEnter={() =>
+									<div
+										key={idx}
+										className="options"
+										onMouseEnter={() => {
+											// Keeps the parent menu open during internal navigation
+											if (timeoutRef.current)
+												clearTimeout(
+													timeoutRef.current,
+												);
+
+											if (sub.dropdown) {
 												setActiveSubMenu(
 													sub.label,
-												)
+												);
+											} else {
+												setActiveSubMenu(
+													null,
+												);
 											}
+										}}
+									>
+										<Link
+											to={sub.link}
+											onClick={closeAllMenus}
 										>
 											{sub.label}
 										</Link>
 
+										{/* SECONDARY FLY-OUT DROPDOWN */}
 										{activeSubMenu ===
 											sub.label &&
 											sub.dropdown && (
-												<div className="nested-menu">
+												<div
+													className="nested-menu"
+													onMouseEnter={() => {
+														if (
+															timeoutRef.current
+														)
+															clearTimeout(
+																timeoutRef.current,
+															);
+													}}
+												>
 													{sub.dropdown.map(
 														(
 															nested,
@@ -91,6 +143,9 @@ const Header = () => {
 																}
 																to={
 																	nested.link
+																}
+																onClick={
+																	closeAllMenus
 																}
 															>
 																{

@@ -25,7 +25,7 @@ const TransportRoutes = () => {
 			</section>
 
 			{/* Routes Section */}
-			<section className="routes-container">
+			{/* <section className="routes-container">
 				<div className="route-card">
 					<h3>Route 1 - City Center</h3>
 					<p>
@@ -47,6 +47,34 @@ const TransportRoutes = () => {
 					<h3>Route 4 - East Zone</h3>
 					<p>
 						Stops: Metro Station → Garden Layout → Main Circle
+					</p>
+				</div>
+			</section> */}
+			{/*once routes confirmed uncommnet above one and remove below one*/}
+
+			<section className="routes-container">
+				<div className="route-card">
+					<h3>Route Information</h3>
+					<p>
+						Bus routes are currently being finalized.
+						Transportation details will be updated soon.
+					</p>
+				</div>
+
+				<div className="route-card">
+					<h3>Pickup & Drop Points</h3>
+					<p>
+						Multiple pickup and drop locations will be
+						available across different areas for student
+						convenience.
+					</p>
+				</div>
+
+				<div className="route-card">
+					<h3>Transportation Support</h3>
+					<p>
+						For temporary transport-related queries, please
+						contact the school administration office.
 					</p>
 				</div>
 			</section>

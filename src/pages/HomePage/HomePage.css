@@ -423,6 +423,30 @@ Total width for 4 cards:
 
 /* Responsive */
 /* Tablet */
+@media (max-width: 1440px) {
+	.carousel-card {
+		min-width: 45%; /* 2 cards */
+	}
+
+	.section1 h2 {
+		top: 12%;
+		font-size: 20px;
+		line-height: 0.6;
+		padding: 0 10px;
+	}
+}
+@media (max-width: 1200px) {
+	.carousel-card {
+		min-width: 45%; /* 2 cards */
+	}
+
+	.section1 h2 {
+		top: 12%;
+		font-size: 20px;
+		line-height: 0.6;
+		padding: 0 10px;
+	}
+}
 @media (max-width: 1024px) {
 	.carousel-card {
 		min-width: 45%; /* 2 cards */

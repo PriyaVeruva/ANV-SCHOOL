@@ -99,7 +99,7 @@ export const headerData = [
 			},
 		],
 	},
-	{ label: "Locations", link: "/locations" },
+	// { label: "Locations", link: "/locations" },
 	{ label: "Careers", link: "/careers" },
 	{ label: "Blogs", link: "/blogs" },
 	{ label: "Alumni", link: "/alumini" },
