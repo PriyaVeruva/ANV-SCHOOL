@@ -1,5 +1,5 @@
 import foodDonation from "../../../assets/images/foodDonation.jpg";
-import kitchenImg from "../../../assets/images/kitchenImg.png";
+import bloodDonationImg from "../../../assets/images/ANV-BloodDonation.png";
 import ngoImg from "../../../assets/images/ngoImg.png";
 import rainwaterImg from "../../../assets/images/rainwaterImg.png";
 import solarImg from "../../../assets/images/solarImg.png";
@@ -13,11 +13,16 @@ export const socialOutReachData = {
 
 	cards: [
 		{
-			image: kitchenImg,
-			title: "ANV Charity Kitchen at Mumbai",
+			image: bloodDonationImg,
+			title: "ANV Blood Donation Camp",
 			description: [
-				"ANV Education Network set up an industrial kitchen at Sewri, Mumbai to provide meals to the homeless and destitute.",
-				"During the Covid-19 pandemic, over 600 meals were served daily to frontline workers and quarantined patients.",
+				`ANV Education Network organized a Blood Donation Camp to help save lives and support people in need."
+
+"Students, staff, and volunteers participated enthusiastically in the noble cause."
+
+"The camp was conducted with proper medical support and safety measures."
+
+"This initiative reflects ANV Education Network’s commitment to community service and social responsibility.`,
 			],
 		},
 		{

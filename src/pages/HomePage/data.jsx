@@ -11,7 +11,7 @@ import remedialLearning from "../../assets/images/remedial-learning.jpg";
 
 export const homePageData = {
 	section1: {
-		title: "Welcome to one of the best ANV MATRIC SCHOOL",
+		title: "Welcome to one of the best ANV Vidhyalaya Matric School",
 		subtitle: "Empowering Tomorrow's Leaders Today",
 		image: banner,
 	},
@@ -38,7 +38,7 @@ export const homePageData = {
 				image: proudTradition,
 				title: "Proud Tradition",
 				description:
-					"ANV Education Network carries a legacy of trust and commitment to quality education since 1927. The Father of our Nation, Mahatma Gandhiji was the first President of the Anandilal ANV Trust and his vision and values still drive the organization",
+					"ANV Education Network has a long-standing legacy of trust and commitment to quality education. Guided by enduring values and a forward-looking vision, the organization remains dedicated to academic excellence and holistic development.",
 			},
 			{
 				image: academicExcellence,

@@ -25,19 +25,19 @@ export const careersData = {
 			id: 1,
 			role: "Mathematics Teacher",
 			location: "Chennai",
-			type: "Full Time",
+			type: "Part Time&Full Time",
 		},
 		{
 			id: 2,
 			role: "Science Teacher",
 			location: "Bangalore",
-			type: "Full Time",
+			type: "Part Time&Full Time",
 		},
 		{
 			id: 3,
 			role: "School Counselor",
 			location: "Hyderabad",
-			type: "Part Time",
+			type: "Part Time&Full Time",
 		},
 	],
 };

@@ -1,7 +1,7 @@
-import rightSkillsBanner from "../../../assets/images/rightSkillsBanner.jpg";
-import cricket from "../../../assets/images/cricket.jpg";
-import basketball from "../../../assets/images/basketball.jpg";
-import football from "../../../assets/images/football.jpg";
+import rightSkillsBanner from "../../../assets/images/rightSkillsBanner.png";
+import cricket from "../../../assets/images/anv-badminton.png";
+import basketball from "../../../assets/images/volleyball.png";
+import football from "../../../assets/images/athletics.png";
 import dance from "../../../assets/images/dance.jpg";
 import theater from "../../../assets/images/theater.jpg";
 import music from "../../../assets/images/music.jpg";
@@ -24,9 +24,9 @@ export const rightSkillsData = {
 			description:
 				"Professional coaching and structured training help students build focus, stamina, strategy, and sportsmanship.",
 			items: [
-				"Football",
-				"Cricket",
-				"Basketball",
+				"Athletics",
+				"Badminton",
+				"VolleyBall",
 				"Table Tennis",
 				"Skating",
 				"Yoga",
@@ -84,15 +84,15 @@ export const rightSkillsData = {
 
 		cards: [
 			{
-				title: "Cricket",
+				title: "Badminton",
 				image: cricket,
 			},
 			{
-				title: "BasketBall",
+				title: "VolleyBall",
 				image: basketball,
 			},
 			{
-				title: "FootBall",
+				title: "Athletics",
 				image: football,
 			},
 		],

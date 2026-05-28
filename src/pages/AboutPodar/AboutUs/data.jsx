@@ -58,7 +58,7 @@ Sincerely,
 	counterDataSection: {
 		counterData: [
 			{
-				number: "23",
+				number: "32+",
 				title: "Years Of Experience",
 				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
 			},
@@ -67,16 +67,16 @@ Sincerely,
 				title: "ANV School",
 				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
 			},
-			{
-				number: "12",
-				title: "ANV  Partner School",
-				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
-			},
-			{
-				number: "40",
-				title: "ANV Preschools",
-				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
-			},
+			// {
+			// 	number: "12",
+			// 	title: "ANV  Partner School",
+			// 	image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
+			// },
+			// {
+			// 	number: "40",
+			// 	title: "ANV Preschools",
+			// 	image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
+			// },
 			{
 				number: "50,000",
 				title: "Students",

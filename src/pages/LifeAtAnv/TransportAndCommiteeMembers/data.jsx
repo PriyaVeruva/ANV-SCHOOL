@@ -19,11 +19,11 @@ export const committeeData = {
 			role: "Regional Transport Manager",
 		},
 		{
-			name: "Mr. Naveen",
+			name: "Murugesan & Selvamani",
 			role: "Transport Supervisor",
 		},
 		{
-			name: "Parent Representative",
+			name: "Vasanthi",
 			role: "Committee Member",
 		},
 	],

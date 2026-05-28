@@ -16,8 +16,8 @@ const Footer = () => {
 			{/* Top Section */}
 			<div className="footer-top">
 				<div className="footer-block">
-					<h4>ANV Schools In</h4>
-					<p>Chennai</p>
+					<h4>ANV School In</h4>
+					<p>Vellakovil-Trippur[district]</p>
 				</div>
 			</div>
 

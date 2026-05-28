@@ -1,7 +1,7 @@
 // import { schoolImages } from "../../../assets/images/images";
 import principalImage from "../../../assets/images/Princi.JPG";
 export const principalMsg = {
-	title: "Principal’s Message - ANV School, Chennai",
+	title: "Principal’s Message - ANV School, Vellakovil",
 	image: principalImage, // add later if available
 	designation: "Principal, ANV School",
 	description: [

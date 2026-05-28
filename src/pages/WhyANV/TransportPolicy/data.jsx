@@ -7,8 +7,8 @@ export const transportData = {
 	},
 
 	stats: [
-		{ id: 1, value: "1400+", label: "School Buses" },
-		{ id: 2, value: "63,450+", label: "Students Transported Daily" },
+		{ id: 1, value: "3", label: "School Buses" },
+		{ id: 2, value: "150+", label: "Students Transported Daily" },
 	],
 
 	sections: [
