@@ -63,11 +63,7 @@ const AboutUs = () => {
 					return (
 						<div className="mainsection" key={i}>
 							<div className="counterSection">
-								<Counter
-									end={Number(
-										ele.number.replace(/,/g, ""),
-									)}
-								/>
+								<Counter end={ele.number} />
 
 								<span>{ele.title}</span>
 							</div>
