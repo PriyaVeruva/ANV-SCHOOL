@@ -1,8 +1,14 @@
 import { useEffect, useRef, useState } from "react";
+
 const Counter = ({ end, duration = 2000 }) => {
 	const [count, setCount] = useState(0);
 	const ref = useRef(null);
 	const started = useRef(false);
+
+	// Extract number and suffix
+	const text = String(end ?? "");
+	const endValue = Number(text.match(/\d+(\.\d+)?/)?.[0] || 0);
+	const suffix = text.replace(/\d+(\.\d+)?/, "");
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -12,7 +18,7 @@ const Counter = ({ end, duration = 2000 }) => {
 					animateCount();
 				}
 			},
-			{ threshold: 0.5 }
+			{ threshold: 0.5 },
 		);
 
 		if (ref.current) observer.observe(ref.current);
@@ -21,15 +27,15 @@ const Counter = ({ end, duration = 2000 }) => {
 	}, []);
 
 	const animateCount = () => {
-		let start = 0;
 		const startTime = performance.now();
 
 		const update = (currentTime) => {
 			const progress = Math.min(
 				(currentTime - startTime) / duration,
-				1
+				1,
 			);
-			const value = Math.floor(progress * end);
+
+			const value = Math.floor(progress * endValue);
 			setCount(value);
 
 			if (progress < 1) {
@@ -40,7 +46,12 @@ const Counter = ({ end, duration = 2000 }) => {
 		requestAnimationFrame(update);
 	};
 
-	return <h2 ref={ref}>{count.toLocaleString()}</h2>;
+	return (
+		<h2 ref={ref}>
+			{count.toLocaleString()}
+			{suffix}
+		</h2>
+	);
 };
 
 export default Counter;

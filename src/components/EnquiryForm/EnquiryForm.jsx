@@ -68,8 +68,6 @@ const EnquiryForm = () => {
 				backdrop: `rgba(0,0,0,0.4)`,
 			});
 
-			console.log(form);
-
 			setForm({
 				state: "Tamilnadu",
 				city: "Vellakovil",

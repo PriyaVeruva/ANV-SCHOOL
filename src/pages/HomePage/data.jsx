@@ -52,18 +52,18 @@ export const homePageData = {
 				description:
 					"Our school boasts a team of dedicated and highly qualified educators who are passionate about nurturing young minds. Our faculty employs innovative teaching methods, keeping lessons engaging and relevant for the 21st century learner",
 			},
-			{
-				image: exceptionaleducators,
-				title: "Exceptional Educators",
-				description:
-					"Our school boasts a team of dedicated and highly qualified educators who are passionate about nurturing young minds. Our faculty employs innovative teaching methods, keeping lessons engaging and relevant for the 21st century learner",
-			},
-			{
-				image: exceptionaleducators,
-				title: "Exceptional Educators",
-				description:
-					"Our school boasts a team of dedicated and highly qualified educators who are passionate about nurturing young minds. Our faculty employs innovative teaching methods, keeping lessons engaging and relevant for the 21st century learner",
-			},
+			// {
+			// 	image: exceptionaleducators,
+			// 	title: "Exceptional Educators",
+			// 	description:
+			// 		"Our school boasts a team of dedicated and highly qualified educators who are passionate about nurturing young minds. Our faculty employs innovative teaching methods, keeping lessons engaging and relevant for the 21st century learner",
+			// },
+			// {
+			// 	image: exceptionaleducators,
+			// 	title: "Exceptional Educators",
+			// 	description:
+			// 		"Our school boasts a team of dedicated and highly qualified educators who are passionate about nurturing young minds. Our faculty employs innovative teaching methods, keeping lessons engaging and relevant for the 21st century learner",
+			// },
 		],
 	},
 	section4: {
@@ -77,7 +77,7 @@ export const homePageData = {
 	section5: {
 		counterData: [
 			{
-				number: "23",
+				number: "30+",
 				title: "Years Of Experience",
 				image: "https://www.podareducation.org/assets/images/icons/icon-stars.png",
 			},
@@ -131,24 +131,24 @@ export const homePageData = {
 				description:
 					"Personalised academic support to bridge learning gaps, strengthen foundations, and ensure every child progresses with confidence.",
 			},
-			{
-				image: remedialLearning,
-				title: "Remedial Learning",
-				description:
-					"Personalised academic support to bridge learning gaps, strengthen foundations, and ensure every child progresses with confidence.",
-			},
-			{
-				image: remedialLearning,
-				title: "Remedial Learning",
-				description:
-					"Personalised academic support to bridge learning gaps, strengthen foundations, and ensure every child progresses with confidence.",
-			},
-			{
-				image: remedialLearning,
-				title: "Remedial Learning",
-				description:
-					"Personalised academic support to bridge learning gaps, strengthen foundations, and ensure every child progresses with confidence.",
-			},
+			// {
+			// 	image: remedialLearning,
+			// 	title: "Remedial Learning",
+			// 	description:
+			// 		"Personalised academic support to bridge learning gaps, strengthen foundations, and ensure every child progresses with confidence.",
+			// },
+			// {
+			// 	image: remedialLearning,
+			// 	title: "Remedial Learning",
+			// 	description:
+			// 		"Personalised academic support to bridge learning gaps, strengthen foundations, and ensure every child progresses with confidence.",
+			// },
+			// {
+			// 	image: remedialLearning,
+			// 	title: "Remedial Learning",
+			// 	description:
+			// 		"Personalised academic support to bridge learning gaps, strengthen foundations, and ensure every child progresses with confidence.",
+			// },
 		],
 	},
 

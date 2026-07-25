@@ -148,11 +148,7 @@ const HomePage = () => {
 						<div className="mainsection" key={i}>
 							<div className="counterSection">
 								{/* <h2>{ele.number}</h2> */}
-								<Counter
-									end={Number(
-										ele.number.replace(/,/g, ""),
-									)}
-								/>
+								<Counter end={ele.number} />
 
 								<span>{ele.title}</span>
 							</div>
