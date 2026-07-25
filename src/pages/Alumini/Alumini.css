@@ -125,3 +125,10 @@
 .alumni-cta button:hover {
 	background: #7e1f61;
 }
+@media (max-width: 576px) {
+	.alumni-stats {
+		grid-template-columns: 1fr;
+		gap: 16px;
+		padding: 0 16px;
+	}
+}
